@@ -3,6 +3,14 @@
 
 @theme {
       --font-Inter: "Inter", sans-serif;
+      --color-background: #131313;
+      --color-white40: #717171;
+      --color-white30: #616161;
+      --color-white20: #424242;
+      --color-white10: #292929;
+      --color-orange: #e17100;
+      --color-white: #ffffff;
+      
 }
 
 .grid-bg {
@@ -20,4 +28,9 @@
 
 :root{
       color-scheme: dark;
+}
+
+body{
+      color: #717171;
+      font-family: var(--font-Inter);
 }

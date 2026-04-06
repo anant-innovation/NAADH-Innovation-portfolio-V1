@@ -1,16 +1,18 @@
 import "@fontsource/inter";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Mobile/Home";
+import MobileTabNavbar from "./Components/MobileTabNavbar";
 
 function App() {
-  
+
 
   return (
-    <div className=" bg-black w-screen h-[500vh]">
+    <div>
+      <MobileTabNavbar/>
 
-
-      <div className=" grid-bg w-screen h-screen">
-      <h1 className=" font-Inter text-5xl text-white">Hello world</h1>
-      </div>
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   )
 }
