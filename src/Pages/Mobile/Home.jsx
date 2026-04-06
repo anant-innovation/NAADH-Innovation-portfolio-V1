@@ -1,11 +1,12 @@
 import BulletPoint from "../../Components/BulletPoint";
-import mobileWhatDoWeDoSection from "../../Assets/Mobile/phoneImage1.png"
-import mobileDroneDevelopmentSectionImg1 from "@/Assets/Mobile/PhonedroneDev1.png"
-import mobileDroneDevelopmentSectionImg2 from "@/Assets/Mobile/PhoneDroneDev2.png"
-import mobileDroneDevelopmentSectionImg3 from "@/Assets/Mobile/PhoneDroneDev3.png"
+import mobileWhatDoWeDoSection from "../../assets/Mobile/phoneImage1.jpg"
+import mobileDroneDevelopmentSectionImg1 from "@/assets/Mobile/PhonedroneDev1.jpg"
+import mobileDroneDevelopmentSectionImg2 from "@/assets/Mobile/PhoneDroneDev2.jpg"
+import mobileDroneDevelopmentSectionImg3 from "@/assets/Mobile/PhoneDroneDev3.jpg"
+import mobileWorkshopSectionImage from "@/assets/Mobile/PhoneWorkshopsSection.jpg"
+
 
 import Heading from "../../Components/Heading";
-import OrangeButton from "@/Components/Button";
 import Button from "@/Components/Button";
 
 const Home = () => {
@@ -153,7 +154,7 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* WORKSHOPS */}
-            <div>
+            <div className=" flex flex-col justify-center ">
 
                 {/* workshop heading */}
                 <Heading text={"Workshops"} />
@@ -171,6 +172,11 @@ const Home = () => {
                     <Button classname={"mr-6"} solid={"true"} text={"Contact Us"}/>
                     <Button outline={"true"} text={"Workshops"} />
                 </div>
+
+
+
+                {/* images */}
+                <img src={mobileWorkshopSectionImage} alt="" />
 
 
 
