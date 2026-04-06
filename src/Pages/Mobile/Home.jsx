@@ -1,5 +1,10 @@
 import BulletPoint from "../../Components/BulletPoint";
 import mobileWhatDoWeDoSection from "../../Assets/Mobile/phoneImage1.png"
+import mobileDroneDevelopmentSectionImg1 from "@/Assets/Mobile/PhonedroneDev1.png"
+import mobileDroneDevelopmentSectionImg2 from "@/Assets/Mobile/PhoneDroneDev2.png"
+import mobileDroneDevelopmentSectionImg3 from "@/Assets/Mobile/PhoneDroneDev3.png"
+
+import Heading from "../../Components/Heading";
 
 const Home = () => {
 
@@ -53,10 +58,10 @@ const Home = () => {
 
             {/* ***********************************************/}
             {/* WHAT DO WE DO */}
-            <div className="w-screen flex flex-col px-[10px]">
+            <div className="w-screen flex flex-col px-[10px] mb-[100px]">
 
                 {/* Heading */}
-                <h1 className=" text-3xl tracking-[-4%] font-extrabold text-white mb-[30px]">What do we do ?</h1>
+                <Heading text={"What do we do ?"} />
 
 
                 {/* paragraph */}
@@ -93,7 +98,40 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* DRONE DEVELOPMENT */}
+            <div className=" flex flex-col px-[10px] justify-center mb-[100px]">
 
+                {/* heading */}
+                <Heading text="Drone Development" />
+
+                {/* paragraph */}
+                <p className="mb-[30px]">We are working towards building drones that can be used in areas like agriculture and defense, where they can actually solve real problems and create a impact.
+                    <br /><br />
+
+                Our focus is on understanding how these systems work from the ground up from basic electronics and flight control to how different components come together to make a reliable system. We spend a lot of time experimenting, testing ideas, and learning through trial and error.Along the way, we’re also exploring how drones can be adapted for different use cases whether it’s monitoring fields, collecting data, or handling tasks that are difficult or time-consuming for humans. <br /><br />
+
+                It’s a continuous process of learning, building, and improving, and each step helps us get closer to creating systems that are practical and dependable.</p>
+
+
+                {/* image 1 */}
+
+                <img className=" mb-[10px]" src={mobileDroneDevelopmentSectionImg1} alt="" />
+
+                {/* image 2 */}
+                <img className=" mb-[10px]" src={mobileDroneDevelopmentSectionImg2} alt="" />
+
+                {/* image 3 */}
+                <img className=" mb-[30px]" src={mobileDroneDevelopmentSectionImg3} alt="" />
+
+
+
+                {/* Tested under real conditions */}
+                <div className=" flex justify-end">
+                    <BulletPoint text={"TESTED UNDER REAL CONDITIONS"}/>
+                </div>
+
+
+
+            </div>
 
 
 
