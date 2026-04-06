@@ -5,6 +5,8 @@ import mobileDroneDevelopmentSectionImg2 from "@/Assets/Mobile/PhoneDroneDev2.pn
 import mobileDroneDevelopmentSectionImg3 from "@/Assets/Mobile/PhoneDroneDev3.png"
 
 import Heading from "../../Components/Heading";
+import OrangeButton from "@/Components/Button";
+import Button from "@/Components/Button";
 
 const Home = () => {
 
@@ -107,9 +109,9 @@ const Home = () => {
                 <p className="mb-[30px]">We are working towards building drones that can be used in areas like agriculture and defense, where they can actually solve real problems and create a impact.
                     <br /><br />
 
-                Our focus is on understanding how these systems work from the ground up from basic electronics and flight control to how different components come together to make a reliable system. We spend a lot of time experimenting, testing ideas, and learning through trial and error.Along the way, we’re also exploring how drones can be adapted for different use cases whether it’s monitoring fields, collecting data, or handling tasks that are difficult or time-consuming for humans. <br /><br />
+                    Our focus is on understanding how these systems work from the ground up from basic electronics and flight control to how different components come together to make a reliable system. We spend a lot of time experimenting, testing ideas, and learning through trial and error.Along the way, we’re also exploring how drones can be adapted for different use cases whether it’s monitoring fields, collecting data, or handling tasks that are difficult or time-consuming for humans. <br /><br />
 
-                It’s a continuous process of learning, building, and improving, and each step helps us get closer to creating systems that are practical and dependable.</p>
+                    It’s a continuous process of learning, building, and improving, and each step helps us get closer to creating systems that are practical and dependable.</p>
 
 
                 {/* image 1 */}
@@ -126,7 +128,7 @@ const Home = () => {
 
                 {/* Tested under real conditions */}
                 <div className=" flex justify-end">
-                    <BulletPoint text={"TESTED UNDER REAL CONDITIONS"}/>
+                    <BulletPoint text={"TESTED UNDER REAL CONDITIONS"} />
                 </div>
 
 
@@ -151,7 +153,32 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* WORKSHOPS */}
+            <div>
 
+                {/* workshop heading */}
+                <Heading text={"Workshops"} />
+
+                {/* workshop paragraph */}
+                <p className=" mb-[30px]">We conduct workshops for schools and colleges where students get hands-on experience with drones, electronics, and basic engineering concepts. Instead of just explaining things in theory, we focus on actually building and understanding how things work. <br />
+                    During these sessions, students get to see how different components come together from basic circuits to the fundamentals of how a drone flies. We keep the approach simple so that even beginners can follow along and feel comfortable experimenting. <br /><br />
+
+                    The goal is to make learning more practical and interesting, and to give students a sense of what real-world engineering looks like. It’s not just about completing a session, but about helping them build curiosity and confidence to explore further on their own.</p>
+
+
+
+                {/* buttons */}
+                <div className=" w-screen flex justify-start mb-[60px]">
+                    <Button classname={"mr-6"} solid={"true"} text={"Contact Us"}/>
+                    <Button outline={"true"} text={"Workshops"} />
+                </div>
+
+
+
+
+
+
+
+            </div>
 
 
 
