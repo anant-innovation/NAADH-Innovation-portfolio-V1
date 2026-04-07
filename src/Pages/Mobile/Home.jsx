@@ -311,7 +311,7 @@ const Home = () => {
 
                 {/* visit gallery button */}
                 <div className=" flex justify-end">
-                    <Button outline={"true"} text={"Visit Gallery"}/>
+                    <Button outline={"true"} text={"Visit Gallery"} />
                 </div>
 
             </div>
@@ -337,7 +337,9 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* FOOTER CONTACT US */}
-            <ContactUsFooter/>
+            <div className=" px-[10px]">
+                <ContactUsFooter />
+            </div>
         </div>
     );
 }
