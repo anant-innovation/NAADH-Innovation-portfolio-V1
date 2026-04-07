@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Button = ({ url, link, text, classname, outline, solid }) => {
+const Button = ({ link, text, classname, outline, solid }) => {
 
     if (outline) {
 

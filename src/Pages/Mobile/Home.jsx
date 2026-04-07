@@ -15,6 +15,7 @@ import mobileHomeImage11 from "@/assets/Mobile/HomePage/MobileHome11.jpg"
 import Heading from "../../Components/Heading";
 import Button from "@/Components/Button";
 import Heading2 from "@/Components/Heading2";
+import ContactUsFooter from "@/Components/ContactUsFooter";
 
 const Home = () => {
 
@@ -215,7 +216,7 @@ const Home = () => {
 
             {/* ********************************************** */}
             {/* WHAT WE OFFER */}
-            <div className=" flex flex-col justify-center px-[10px]">
+            <div className=" flex flex-col justify-center px-[10px] mb-[100px]">
 
 
                 {/* What we offer heading */}
@@ -288,7 +289,32 @@ const Home = () => {
 
             {/* ********************************************** */}
             {/* WHY CHOOSE US */}
+            <div className=" flex flex-col justify-center px-[10px]">
 
+                {/* Why Choose Us Heading */}
+                <Heading text={"Why Choose Us ?"} />
+
+                {/* paragraph */}
+                <p className=" mb-[30px]">We’ve worked with students across different schools and colleges, conducting workshops that focus on practical learning and real understanding. Over time, we’ve learned what works and how to keep students engaged while making sure they actually learn something useful.</p>
+
+                {/* images 8 to 11 */}
+                <img className=" mb-[10px]" src={mobileHomeImage8} alt="" />
+                <img className=" mb-[10px]" src={mobileHomeImage9} alt="" />
+                <img className=" mb-[10px]" src={mobileHomeImage10} alt="" />
+                <img className=" mb-[20px]" src={mobileHomeImage11} alt="" />
+
+                {/* bullet */}
+                <div className=" flex justify-start mb-[40px]">
+                    <BulletPoint sm={"true"} text={"WE WILL LET THE PICTURES DO THE TALKING"} />
+                </div>
+
+
+                {/* visit gallery button */}
+                <div className=" flex justify-end">
+                    <Button outline={"true"} text={"Visit Gallery"}/>
+                </div>
+
+            </div>
 
 
 
@@ -311,6 +337,7 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* FOOTER CONTACT US */}
+            <ContactUsFooter/>
         </div>
     );
 }
