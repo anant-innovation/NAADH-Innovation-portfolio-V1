@@ -1,9 +1,9 @@
 import BulletPoint from "../../Components/BulletPoint";
-import mobileWhatDoWeDoSection from "../../assets/Mobile/phoneImage1.jpg"
-import mobileDroneDevelopmentSectionImg1 from "@/assets/Mobile/PhonedroneDev1.jpg"
-import mobileDroneDevelopmentSectionImg2 from "@/assets/Mobile/PhoneDroneDev2.jpg"
-import mobileDroneDevelopmentSectionImg3 from "@/assets/Mobile/PhoneDroneDev3.jpg"
-import mobileWorkshopSectionImage from "@/assets/Mobile/PhoneWorkshopsSection.jpg"
+import mobileWhatDoWeDoSection from "../../assets/Mobile/HomePage/MobileHome1.jpg"
+import mobileDroneDevelopmentSectionImg1 from "@/assets/Mobile/HomePage/MobileHome2.jpg"
+import mobileDroneDevelopmentSectionImg2 from "@/assets/Mobile/HomePage/MobileHome3.jpg"
+import mobileDroneDevelopmentSectionImg3 from "@/assets/Mobile/HomePage/MobileHome4.jpg"
+import mobileWorkshopSectionImage from "@/assets/Mobile/HomePage/MobileHome5.jpg"
 
 
 import Heading from "../../Components/Heading";
@@ -154,7 +154,7 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* WORKSHOPS */}
-            <div className=" flex flex-col justify-center ">
+            <div className=" flex flex-col justify-center px-[10px]">
 
                 {/* workshop heading */}
                 <Heading text={"Workshops"} />
@@ -169,14 +169,19 @@ const Home = () => {
 
                 {/* buttons */}
                 <div className=" w-screen flex justify-start mb-[60px]">
-                    <Button classname={"mr-6"} solid={"true"} text={"Contact Us"}/>
+                    <Button classname={"mr-6"} solid={"true"} text={"Contact Us"} />
                     <Button outline={"true"} text={"Workshops"} />
                 </div>
 
 
 
                 {/* images */}
-                <img src={mobileWorkshopSectionImage} alt="" />
+                <img className=" mb-[30px]" src={mobileWorkshopSectionImage} alt="" />
+
+                {/* bullet */}
+                <div className=" flex justify-end">
+                    <BulletPoint text={"DEDICATED TO THE PROCESS"} />
+                </div>
 
 
 
@@ -203,7 +208,7 @@ const Home = () => {
 
             {/* ********************************************** */}
             {/* WHAT WE OFFER */}
-
+            
 
 
 
