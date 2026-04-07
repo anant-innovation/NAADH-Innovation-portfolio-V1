@@ -4,11 +4,12 @@ const MobileTabNavbar = () => {
 
 
     return(
-        <div className=" w-screen h-[4rem] bg-background flex items-center justify-between p-[10px] border-b border-white10">
+        <div className=" w-screen h-[4rem] bg-background flex items-center justify-between p-[10px] border-b border-white10 
+         sticky top-0 z-50">
 
 
             {/* NAADH Innovation left side */}
-            <h1 className=" text-lg font-semibold">NAADH Innovation</h1>
+            <h1 className=" text-sm font-semibold">NAADH Innovation</h1>
 
 
 
