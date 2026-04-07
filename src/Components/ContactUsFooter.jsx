@@ -10,7 +10,7 @@ const ContactUsFooter = () => {
 
 
     return (
-        <div className=' px-[10px] flex flex-col relative overflow-hidden'>
+        <div className=' flex flex-col relative overflow-hidden'>
 
             <div className=' flex flex-col justify-start mb-[30px]'>
 
