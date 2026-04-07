@@ -289,7 +289,7 @@ const Home = () => {
 
             {/* ********************************************** */}
             {/* WHY CHOOSE US */}
-            <div className=" flex flex-col justify-center px-[10px]">
+            <div className=" flex flex-col justify-center px-[10px] mb-[100px]">
 
                 {/* Why Choose Us Heading */}
                 <Heading text={"Why Choose Us ?"} />

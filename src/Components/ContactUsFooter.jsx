@@ -1,11 +1,16 @@
 import { MapPin } from 'lucide-react';
-import Heading from "@/Components/Heading"
+import { FaLinkedin } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import Button from './Button';
+
+
+
 
 const ContactUsFooter = () => {
 
 
     return (
-        <div className=' px-[10px] flex flex-col'>
+        <div className=' px-[10px] flex flex-col relative overflow-hidden'>
 
             <div className=' flex flex-col justify-start mb-[30px]'>
 
@@ -27,12 +32,12 @@ const ContactUsFooter = () => {
 
 
 
-            <div className=' flex '>
+            <div className=' flex mb-[30px]'>
 
 
 
                 {/* the left side */}
-                <div className=' border-r border-white20 pr-[30px]'>
+                <div className=' border-r border-white20 pr-[20px]'>
 
                     {/* the copyright stuff */}
                     <p className=' mb-[15px]'>© 2026 NAADH INNOVATION. <br />
@@ -40,8 +45,8 @@ const ContactUsFooter = () => {
 
                     {/* location with the map icon */}
                     <div className=' flex mb-[15px]'>
-                        
-                        <MapPin className=' w-[15px]'/>
+
+                        <MapPin className=' w-[15px]' />
 
 
                         <p>3 No. Shankhari pukur <br />
@@ -64,40 +69,48 @@ const ContactUsFooter = () => {
 
 
                 {/* the right side */}
-                <div className=' text-sm'>
+                <div className=' text-sm pl-[10px]'>
 
 
                     {/* socials */}
-                    <div>
-                        <p>Socials</p>
-                        
+                    <div className=' mb-[10px]'>
+                        <p className=' text-white mb-[3px]'>Socials</p>
+
+                        <div className=' flex'>
+
+                            {/* linkedin */}
+                            <a href="">
+                                <FaLinkedin className='w-[30px] h-[30px]' />
+                            </a>
+
+                            {/* twitter */}
+                            <a href="">
+                                <BsTwitterX className='w-[30px] h-[30px]' />
+                            </a>
+                        </div>
+
                     </div>
 
 
                     {/* privacy policy */}
-                    <a href="">Privacy Policy</a>
-
+                    <a href="" className=' text-white underline'>Privacy Policy</a>
+                    <br />
                     {/* careers */}
+                    <a href="" className=' text-white underline'>Careers</a>
 
 
-                    {/* Contact us orange button */}
                 </div>
             </div>
 
 
 
-
-
-
-
-
-
-
-            <div>
-                {/* The light NAADH Name */}
-
-
+            {/* the button */}
+            <div className=' mb-[30px]'>
+                {/* Contact us orange button */}
+                <Button solid={"true"} text={"Contact Us"} />
             </div>
+
+            
 
 
 
