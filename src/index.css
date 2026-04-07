@@ -29,6 +29,8 @@
 
 :root{
       color-scheme: dark;
+      line-height: 19px;
+      /* line-height: normal; */
 }
 
 body{

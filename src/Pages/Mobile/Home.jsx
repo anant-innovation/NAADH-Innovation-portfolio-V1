@@ -4,10 +4,17 @@ import mobileDroneDevelopmentSectionImg1 from "@/assets/Mobile/HomePage/MobileHo
 import mobileDroneDevelopmentSectionImg2 from "@/assets/Mobile/HomePage/MobileHome3.jpg"
 import mobileDroneDevelopmentSectionImg3 from "@/assets/Mobile/HomePage/MobileHome4.jpg"
 import mobileWorkshopSectionImage from "@/assets/Mobile/HomePage/MobileHome5.jpg"
+import mobileHomeImage6 from "@/assets/Mobile/HomePage/MobileHome6.jpg"
+import mobileHomeImage7 from "@/assets/Mobile/HomePage/MobileHome7.jpg"
+import mobileHomeImage8 from "@/assets/Mobile/HomePage/MobileHome8.jpg"
+import mobileHomeImage9 from "@/assets/Mobile/HomePage/MobileHome9.jpg"
+import mobileHomeImage10 from "@/assets/Mobile/HomePage/MobileHome10.jpg"
+import mobileHomeImage11 from "@/assets/Mobile/HomePage/MobileHome11.jpg"
 
 
 import Heading from "../../Components/Heading";
 import Button from "@/Components/Button";
+import Heading2 from "@/Components/Heading2";
 
 const Home = () => {
 
@@ -154,7 +161,7 @@ const Home = () => {
 
             {/* ********************************************* */}
             {/* WORKSHOPS */}
-            <div className=" flex flex-col justify-center px-[10px]">
+            <div className=" flex flex-col justify-center px-[10px] mb-[100px]">
 
                 {/* workshop heading */}
                 <Heading text={"Workshops"} />
@@ -168,7 +175,7 @@ const Home = () => {
 
 
                 {/* buttons */}
-                <div className=" w-screen flex justify-start mb-[60px]">
+                <div className=" flex justify-start mb-[60px]">
                     <Button classname={"mr-6"} solid={"true"} text={"Contact Us"} />
                     <Button outline={"true"} text={"Workshops"} />
                 </div>
@@ -208,7 +215,55 @@ const Home = () => {
 
             {/* ********************************************** */}
             {/* WHAT WE OFFER */}
-            
+            <div className=" flex flex-col justify-center px-[10px]">
+
+
+                {/* What we offer heading */}
+                <Heading text={"What we offer"} />
+
+                {/* the paragraph */}
+                <p className=" mb-[30px]">We work with schools and colleges to bring more practical learning into the classroom. Our focus is on helping students understand how things work by actually building and experimenting.</p>
+
+
+                {/* WORKSHOPS HEADING */}
+                <Heading2 text={"WORKSHOPS"} />
+
+
+                {/* Small paragraph */}
+                <p className=" mb-[30px]">We conduct hands-on workshops where students learn the basics of drones, electronics, and engineering.</p>
+
+
+                {/* image */}
+                <img className=" mb-[30px]" src={mobileHomeImage6} alt="" />
+
+
+                {/* bullet point */}
+                <div className=" flex justify-end mb-[30px]">
+                    <BulletPoint text={"KNOW MORE"} />
+                </div>
+
+
+
+                {/* STEM LABS */}
+                <Heading2 text={"STEM LABS"} />
+
+
+
+                {/* Paragraph */}
+                <p className=" mb-[30px]">We help institutions set up STEM labs where students can explore, test ideas, and work on small projects.</p>
+
+
+                {/* image */}
+                <img className=" mb-[30px]" src={mobileHomeImage7} alt="" />
+
+
+                {/* bullet point */}
+                <div className=" flex justify-end">
+                    <BulletPoint text={"KNOW MORE"} />
+                </div>
+
+
+            </div>
 
 
 
