@@ -7,6 +7,7 @@ import Workshop from "./Pages/Mobile/Workshop";
 import StemLAB from "./Pages/Mobile/StemLAB";
 import ContactUs from "./Pages/Mobile/ContactUs";
 import { useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
 
 
 function App() {
@@ -14,26 +15,32 @@ function App() {
   const currentLocation = useLocation()
 
 
-
   useEffect(() => {
 
-    window.scrollTo(0,0);
+    const timer = setTimeout(() => {
 
-  },[currentLocation])
-  
+      window.scrollTo(0,0)
+    }, 400)
+    
+    return () => clearTimeout(timer);
+
+  }, [currentLocation])
+
 
 
   return (
     <div>
-      <MobileTabNavbar/>
+      <MobileTabNavbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/workshop" element={<Workshop />} />
-        <Route path="/stemlab" element={<StemLAB />} />
-        <Route path="/contactUs" element={<ContactUs />} />
-      </Routes>
+      <AnimatePresence mode="wait">
+        <Routes location={currentLocation} key={currentLocation.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/workshop" element={<Workshop />} />
+          <Route path="/stemlab" element={<StemLAB />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   )
 }

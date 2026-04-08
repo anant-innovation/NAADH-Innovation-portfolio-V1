@@ -17,13 +17,14 @@ import Button from "@/Components/Button";
 import Heading2 from "@/Components/Heading2";
 import ContactUsFooter from "@/Components/ContactUsFooter";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react"
 
 
 const Home = () => {
 
 
 
-    
+
 
 
 
@@ -33,7 +34,12 @@ const Home = () => {
 
     return (
 
-        <div className=" relative overflow-hidden">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" relative overflow-hidden">
 
 
             {/* ******************************************* */}
@@ -350,9 +356,9 @@ const Home = () => {
             {/* ********************************************* */}
             {/* FOOTER CONTACT US */}
             <div className=" px-[10px]">
-                <ContactUsFooter button={true}/>
+                <ContactUsFooter button={true} />
             </div>
-        </div>
+        </motion.div>
     );
 }
 

@@ -4,6 +4,7 @@ import ContactUsFooter from "@/Components/ContactUsFooter";
 import Divider from "@/Components/Divider";
 import Heading from "@/Components/Heading";
 import SecondaryPageHeroHeading from "@/Components/SecondaryPageHeroHeading";
+import { motion } from "motion/react"
 
 // images
 import mobileWorkshopImage1 from "@/assets/Mobile/Workshop/mobileWorkshop1.jpg"
@@ -17,7 +18,12 @@ const Workshop = () => {
 
 
     return (
-        <div className=" px-[10px]">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" px-[10px]">
 
 
             {/* bullet */}
@@ -154,8 +160,8 @@ const Workshop = () => {
 
 
             {/* contact us footer */}
-            <ContactUsFooter button={true}/>
-        </div>
+            <ContactUsFooter button={true} />
+        </motion.div>
     );
 }
 
