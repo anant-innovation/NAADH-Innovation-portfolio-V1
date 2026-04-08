@@ -1,9 +1,11 @@
 
 
+
 const MobileTabNavbar = () => {
 
 
-    return(
+
+    return (
         <div className=" w-screen h-[4rem] bg-background flex items-center justify-between p-[10px] border-b border-white10 
          sticky top-0 z-50">
 
@@ -14,7 +16,7 @@ const MobileTabNavbar = () => {
 
 
             {/* Two orange lines to open the menu */}
-            <div className=" flex flex-col w-[2rem] h-[2rem] justify-evenly items-end">
+            <div className=" flex flex-col w-[2rem] h-[2rem] justify-evenly items-end z-40">
 
                 <div className=" bg-orange w-[100%] h-[3px]"></div>
                 <div className=" bg-orange w-[50%] h-[3px]"></div>
