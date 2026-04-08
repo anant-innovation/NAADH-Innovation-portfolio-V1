@@ -112,7 +112,7 @@ const Workshop = () => {
 
             {/* gallery button */}
             <div className=" flex justify-end mb-[60px]">
-                <Button outline={true} text={"Gallery"} />
+                <Button link={"/gallery"} outline={true} text={"Gallery"} />
             </div>
 
 

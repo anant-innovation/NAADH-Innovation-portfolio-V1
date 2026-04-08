@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { useRef,useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 
 
@@ -84,6 +84,9 @@ const MobileTabNavbar = () => {
             })
         }
     }
+
+
+    const currentLocation = useLocation()
  
     
     
@@ -118,11 +121,21 @@ const MobileTabNavbar = () => {
             >
 
                 <div className=" flex flex-col justify-center text-xl min-w-[200px] pl-[30px] mx-[50px] text-white">
-                    <Link className=" mb-[3px] ">Home</Link>
-                    <Link className=" mb-[3px]">Workshop</Link>
-                    <Link className=" mb-[3px]">StemLAB</Link>
-                    <Link className=" mb-[3px]">Gallery</Link>
-                    <Link className="">Contact Us</Link>
+                    <Link to={"/"} onClick={mobileDrawerStateUpdate}
+                     className={currentLocation.pathname === "/" ? " font-bold underline underline-offset-2 mb-[3px] " : "mb-[3px]"}>Home</Link>
+
+                    <Link to={"/workshop"} onClick={mobileDrawerStateUpdate}
+                     className={currentLocation.pathname === "/workshop" ? " font-bold underline underline-offset-2 mb-[3px] " : "mb-[3px]"}>Workshop</Link>
+
+                    <Link to={"stemlab"} onClick={mobileDrawerStateUpdate}
+                     className={currentLocation.pathname === "/stemlab" ? " font-bold underline underline-offset-2 mb-[3px] " : "mb-[3px]"}>STEM Lab</Link>
+
+                    <Link to={"gallery"} onClick={mobileDrawerStateUpdate}
+                     className={currentLocation.pathname === "/gallery" ? " font-bold underline underline-offset-2 mb-[3px] " : "mb-[3px]"}>Gallery</Link>
+
+                    <Link to={"contactus"} onClick={mobileDrawerStateUpdate}
+                     className={currentLocation.pathname === "/contactus" ? " font-bold underline underline-offset-2 mb-[3px] " : "mb-[3px]"}>Contact Us</Link>
+
                 </div>
 
             </div>

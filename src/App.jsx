@@ -1,13 +1,26 @@
 import "@fontsource/inter";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Pages/Mobile/Home";
 import MobileTabNavbar from "./Components/MobileTabNavbar";
 import Gallery from "./Pages/Mobile/Gallery";
 import Workshop from "./Pages/Mobile/Workshop";
 import StemLAB from "./Pages/Mobile/StemLAB";
 import ContactUs from "./Pages/Mobile/ContactUs";
+import { useEffect } from "react";
+
 
 function App() {
+
+  const currentLocation = useLocation()
+
+
+
+  useEffect(() => {
+
+    window.scrollTo(0,0);
+
+  },[currentLocation])
+  
 
 
   return (

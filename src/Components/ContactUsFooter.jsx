@@ -108,7 +108,7 @@ const ContactUsFooter = ({ button }) => {
             {
                 button ? (
                     <div className=' mb-[30px]'>
-                        <Button solid={"true"} text={"Contact Us"} />
+                        <Button link={"/contactus"} solid={"true"} text={"Contact Us"} />
                     </div>
                 ) : null
 

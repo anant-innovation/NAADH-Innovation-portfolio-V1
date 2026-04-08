@@ -94,7 +94,7 @@ const Gallery = () => {
 
             {/* workshop button */}
             <div className=" flex justify-end mb-[100px]">
-                <Button outline={true} text={"Workshops"} />
+                <Button link={"/workshop"} outline={true} text={"Workshops"} />
             </div>
 
 
