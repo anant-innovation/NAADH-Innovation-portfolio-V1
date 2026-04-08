@@ -10,6 +10,8 @@ const MobileTabNavbar = () => {
     const[mobileDrawerState, setMobileDrawerState] = useState(true);
     const mobileDrawer = useRef();
     const mobileDrawerGhost = useRef();
+    const hamburger1 = useRef();
+    const hamburger2 = useRef();
 
 
     // the function controlling the state of the drawer
@@ -32,6 +34,21 @@ const MobileTabNavbar = () => {
             gsap.to(mobileDrawerGhost.current,{
                 width:"100%"
             })
+
+            gsap.to(hamburger1.current,{
+
+                rotate:-45,
+                backgroundColor:"black",
+                transformOrigin:"center"
+            })
+
+            gsap.to(hamburger2.current, {
+
+                width:"100%",
+                y:"-11px",
+                rotate:45,
+                backgroundColor:"black",
+            })
         }
 
 
@@ -48,6 +65,22 @@ const MobileTabNavbar = () => {
             gsap.to(mobileDrawerGhost.current,{
                 width:"0%",
                 duration:0
+            })
+
+            gsap.to(hamburger1.current,{
+
+                rotate:0,
+                backgroundColor:"#e17100",
+                transformOrigin:"center"
+            })
+
+
+            gsap.to(hamburger2.current, {
+
+                width:"50%",
+                y:"0",
+                rotate:0,
+                backgroundColor:"#e17100",
             })
         }
     }
@@ -69,12 +102,12 @@ const MobileTabNavbar = () => {
 
 
             {/* Two orange lines to open the menu */}
-            <div className=" flex flex-col w-[2rem] h-[2rem] justify-evenly items-end z-50"
+            <div className=" flex flex-col w-[2rem] h-[2rem] justify-evenly items-end z-50 "
             onClick={mobileDrawerStateUpdate}
             >
 
-                <div className=" bg-orange w-[100%] h-[3px]"></div>
-                <div className=" bg-orange w-[50%] h-[3px]"></div>
+                <div ref={hamburger1} className=" bg-orange w-[100%] h-[3px] "></div>
+                <div ref={hamburger2} className=" bg-orange w-[50%] h-[3px] "></div>
             </div>
 
 
@@ -84,12 +117,12 @@ const MobileTabNavbar = () => {
             "
             >
 
-                <div className=" flex flex-col justify-center text-xl min-w-[200px] pl-[30px] mx-[50px]">
-                    <Link className=" mb-[3px] text-white font-light">Home</Link>
-                    <Link className=" mb-[3px] text-white font-light">Workshop</Link>
-                    <Link className=" mb-[3px] text-white font-light">StemLAB</Link>
-                    <Link className=" mb-[3px] text-white font-light">Gallery</Link>
-                    <Link className=" text-white font-bold underline underline-offset-2">Contact Us</Link>
+                <div className=" flex flex-col justify-center text-xl min-w-[200px] pl-[30px] mx-[50px] text-white">
+                    <Link className=" mb-[3px] ">Home</Link>
+                    <Link className=" mb-[3px]">Workshop</Link>
+                    <Link className=" mb-[3px]">StemLAB</Link>
+                    <Link className=" mb-[3px]">Gallery</Link>
+                    <Link className="">Contact Us</Link>
                 </div>
 
             </div>
