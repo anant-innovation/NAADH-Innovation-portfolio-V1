@@ -28,13 +28,19 @@ import Heading from "@/Components/Heading"
 import Heading2 from "@/Components/Heading2"
 import Button from "@/Components/Button"
 import ContactUsFooter from "@/Components/ContactUsFooter"
+import { motion } from "motion/react"
 
 
 const Gallery = () => {
 
 
     return (
-        <div className=" flex flex-col justify-center px-[10px]">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" flex flex-col justify-center px-[10px]">
 
 
             {/* bullet */}
@@ -94,7 +100,7 @@ const Gallery = () => {
 
             {/* workshop button */}
             <div className=" flex justify-end mb-[100px]">
-                <Button outline={true} text={"Workshops"} />
+                <Button link={"/workshop"} outline={true} text={"Workshops"} />
             </div>
 
 
@@ -145,12 +151,12 @@ const Gallery = () => {
 
             {/* contact us footer */}
             <div>
-                <ContactUsFooter button={true}/>
+                <ContactUsFooter button={true} />
             </div>
 
 
 
-        </div>
+        </motion.div>
     );
 }
 

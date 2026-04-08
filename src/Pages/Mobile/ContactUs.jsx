@@ -3,13 +3,19 @@ import Button from "@/Components/Button";
 import ContactUsFooter from "@/Components/ContactUsFooter";
 import Divider from "@/Components/Divider";
 import SecondaryPageHeroHeading from "@/Components/SecondaryPageHeroHeading";
+import { motion } from "motion/react"
 
 
 const ContactUs = () => {
 
 
     return (
-        <div className=" px-[10px]">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" px-[10px]">
 
 
             {/* bullet */}
@@ -77,14 +83,14 @@ const ContactUs = () => {
 
 
                 <div className=" flex justify-end">
-                    <Button solid={true} text={"Submit"}/>
+                    <Button solid={true} text={"Submit"} />
                 </div>
             </form>
 
 
             {/* the contact us footer */}
             <ContactUsFooter />
-        </div>
+        </motion.div>
     );
 }
 

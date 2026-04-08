@@ -6,6 +6,7 @@ import SecondaryPageHeroHeading from "@/Components/SecondaryPageHeroHeading";
 
 
 import mobileSTEMLABImage1 from "@/assets/Mobile/STEM LAB/mobileSTEMLABImage1.jpg"
+import { motion } from "motion/react"
 
 
 const StemLAB = () => {
@@ -13,7 +14,12 @@ const StemLAB = () => {
 
 
     return (
-        <div className=" px-[10px]">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" px-[10px]">
 
 
             {/* workshop */}
@@ -33,7 +39,7 @@ const StemLAB = () => {
 
 
             {/* divider */}
-            <Divider mb={"60px"}/>
+            <Divider mb={"60px"} />
 
 
             {/* heading What we do */}
@@ -97,8 +103,8 @@ const StemLAB = () => {
 
 
             {/* contact us footer */}
-            <ContactUsFooter button={true}/>
-        </div>
+            <ContactUsFooter button={true} />
+        </motion.div>
     );
 }
 

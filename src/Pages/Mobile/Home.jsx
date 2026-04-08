@@ -16,12 +16,30 @@ import Heading from "../../Components/Heading";
 import Button from "@/Components/Button";
 import Heading2 from "@/Components/Heading2";
 import ContactUsFooter from "@/Components/ContactUsFooter";
+import { Link } from "react-router-dom";
+import { motion } from "motion/react"
+
 
 const Home = () => {
 
+
+
+
+
+
+
+
+
+
+
     return (
 
-        <div>
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" relative overflow-hidden">
 
 
             {/* ******************************************* */}
@@ -76,7 +94,7 @@ const Home = () => {
 
 
                 {/* paragraph */}
-                <p className=" text-md mb-[30px]">We’re a team focused on building drone technology and working on real-world engineering problems. We build drones for practical use cases like defence & agriculture, where they can make a real impact.
+                <p className=" text-md mb-[30px]">We’re a team focused on building drone technology and working on real-world engineering problems. <span className=" text-orange">We build drones</span> for practical use cases like defence & agriculture, where they can make a real impact.
                     <br /><br />
 
                     And teach students how to build them giving them exposure to electronics, flight systems, and the basics of engineering through workshops and lab setups. The idea is to keep it simple, interactive, and focused on learning by doing.
@@ -115,7 +133,7 @@ const Home = () => {
                 <Heading text="Drone Development" />
 
                 {/* paragraph */}
-                <p className="mb-[30px]">We are working towards building drones that can be used in areas like agriculture and defense, where they can actually solve real problems and create a impact.
+                <p className="mb-[30px]">We are working towards building drones that can be used in areas like <span className="text-orange">Agriculture</span> and <span className="text-orange">Defense</span>, where they can actually solve real problems and create a impact.
                     <br /><br />
 
                     Our focus is on understanding how these systems work from the ground up from basic electronics and flight control to how different components come together to make a reliable system. We spend a lot of time experimenting, testing ideas, and learning through trial and error.Along the way, we’re also exploring how drones can be adapted for different use cases whether it’s monitoring fields, collecting data, or handling tasks that are difficult or time-consuming for humans. <br /><br />
@@ -171,14 +189,14 @@ const Home = () => {
                 <p className=" mb-[30px]">We conduct workshops for schools and colleges where students get hands-on experience with drones, electronics, and basic engineering concepts. Instead of just explaining things in theory, we focus on actually building and understanding how things work. <br />
                     During these sessions, students get to see how different components come together from basic circuits to the fundamentals of how a drone flies. We keep the approach simple so that even beginners can follow along and feel comfortable experimenting. <br /><br />
 
-                    The goal is to make learning more practical and interesting, and to give students a sense of what real-world engineering looks like. It’s not just about completing a session, but about helping them build curiosity and confidence to explore further on their own.</p>
+                    <span className=" text-white">The goal is to make learning more practical and interesting</span>, and to give students a sense of what real-world engineering looks like. It’s not just about completing a session, but about helping them build curiosity and confidence to explore further on their own.</p>
 
 
 
                 {/* buttons */}
                 <div className=" flex justify-start mb-[60px]">
-                    <Button classname={"mr-6"} solid={"true"} text={"Contact Us"} />
-                    <Button outline={"true"} text={"Workshops"} />
+                    <Button link={"/contactus"} classname={"mr-6"} solid={"true"} text={"Contact Us"} />
+                    <Button link={"/workshop"} outline={"true"} text={"Workshops"} />
                 </div>
 
 
@@ -239,9 +257,9 @@ const Home = () => {
 
 
                 {/* bullet point */}
-                <div className=" flex justify-end mb-[30px]">
+                <Link className=" flex justify-end mb-[30px]" to={"/workshop"}>
                     <BulletPoint text={"KNOW MORE"} />
-                </div>
+                </Link>
 
 
 
@@ -259,9 +277,9 @@ const Home = () => {
 
 
                 {/* bullet point */}
-                <div className=" flex justify-end">
+                <Link className=" flex justify-end" to={"/stemlab"}>
                     <BulletPoint text={"KNOW MORE"} />
-                </div>
+                </Link>
 
 
             </div>
@@ -311,7 +329,7 @@ const Home = () => {
 
                 {/* visit gallery button */}
                 <div className=" flex justify-end">
-                    <Button outline={"true"} text={"Visit Gallery"} />
+                    <Button link={"/gallery"} outline={"true"} text={"Visit Gallery"} />
                 </div>
 
             </div>
@@ -338,9 +356,9 @@ const Home = () => {
             {/* ********************************************* */}
             {/* FOOTER CONTACT US */}
             <div className=" px-[10px]">
-                <ContactUsFooter button={true}/>
+                <ContactUsFooter button={true} />
             </div>
-        </div>
+        </motion.div>
     );
 }
 
