@@ -338,7 +338,7 @@ const Home = () => {
             {/* ********************************************* */}
             {/* FOOTER CONTACT US */}
             <div className=" px-[10px]">
-                <ContactUsFooter />
+                <ContactUsFooter button={true}/>
             </div>
         </div>
     );

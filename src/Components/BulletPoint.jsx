@@ -1,4 +1,5 @@
 
+
 const BulletPoint = ({text, sm}) => {
 
     if(sm){
