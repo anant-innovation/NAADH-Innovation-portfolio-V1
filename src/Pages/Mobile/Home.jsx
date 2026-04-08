@@ -17,11 +17,22 @@ import Button from "@/Components/Button";
 import Heading2 from "@/Components/Heading2";
 import ContactUsFooter from "@/Components/ContactUsFooter";
 
+
 const Home = () => {
+
+
+
+    
+
+
+
+
+
+
 
     return (
 
-        <div>
+        <div className=" relative overflow-hidden">
 
 
             {/* ******************************************* */}
