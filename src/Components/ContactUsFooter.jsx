@@ -6,7 +6,7 @@ import Button from './Button';
 
 
 
-const ContactUsFooter = () => {
+const ContactUsFooter = ({ button }) => {
 
 
     return (
@@ -104,18 +104,25 @@ const ContactUsFooter = () => {
 
 
 
-            {/* the button */}
-            <div className=' mb-[30px]'>
-                {/* Contact us orange button */}
-                <Button solid={"true"} text={"Contact Us"} />
-            </div>
 
-            
-
-
+            {
+                button ? (
+                    <div className=' mb-[30px]'>
+                        <Button solid={"true"} text={"Contact Us"} />
+                    </div>
+                ) : null
 
 
-        </div>
+
+            }
+
+
+
+
+
+
+
+        </div >
     );
 }
 

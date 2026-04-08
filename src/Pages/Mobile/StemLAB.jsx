@@ -97,7 +97,7 @@ const StemLAB = () => {
 
 
             {/* contact us footer */}
-            <ContactUsFooter />
+            <ContactUsFooter button={true}/>
         </div>
     );
 }

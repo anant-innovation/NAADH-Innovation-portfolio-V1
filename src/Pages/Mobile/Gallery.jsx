@@ -145,7 +145,7 @@ const Gallery = () => {
 
             {/* contact us footer */}
             <div>
-                <ContactUsFooter />
+                <ContactUsFooter button={true}/>
             </div>
 
 
