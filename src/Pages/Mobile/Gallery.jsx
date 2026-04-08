@@ -144,7 +144,7 @@ const Gallery = () => {
 
 
             {/* contact us footer */}
-            <div className="">
+            <div>
                 <ContactUsFooter />
             </div>
 
