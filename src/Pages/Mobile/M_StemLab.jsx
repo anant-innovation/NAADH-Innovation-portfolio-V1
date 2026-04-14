@@ -9,7 +9,7 @@ import mobileSTEMLABImage1 from "@/assets/Mobile/STEM LAB/mobileSTEMLABImage1.jp
 import { motion } from "motion/react"
 
 
-const StemLAB = () => {
+const M_StemLAB = () => {
 
 
 
@@ -19,7 +19,7 @@ const StemLAB = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className=" px-[10px]">
+            className=" px-[10px] switchMobile">
 
 
             {/* workshop */}
@@ -109,4 +109,4 @@ const StemLAB = () => {
 }
 
 
-export default StemLAB
+export default M_StemLAB

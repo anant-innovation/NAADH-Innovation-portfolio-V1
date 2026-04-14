@@ -1,4 +1,4 @@
-
+import { motion } from "motion/react";
 
 const D_Home = () => {
 
@@ -6,9 +6,9 @@ const D_Home = () => {
 
 
     return(
-        <div className=" text-8xl text-white switchDesktop">
+        <motion.div className=" text-8xl text-white switchDesktop">
             Desktop Home Page
-        </div>
+        </motion.div>
     );
 }
 

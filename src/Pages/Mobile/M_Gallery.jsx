@@ -31,7 +31,7 @@ import ContactUsFooter from "@/Components/ContactUsFooter"
 import { motion } from "motion/react"
 
 
-const Gallery = () => {
+const M_Gallery = () => {
 
 
     return (
@@ -40,7 +40,7 @@ const Gallery = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className=" flex flex-col justify-center px-[10px]">
+            className=" flex flex-col justify-center px-[10px] switchMobile">
 
 
             {/* bullet */}
@@ -162,4 +162,4 @@ const Gallery = () => {
 
 
 
-export default Gallery
+export default M_Gallery

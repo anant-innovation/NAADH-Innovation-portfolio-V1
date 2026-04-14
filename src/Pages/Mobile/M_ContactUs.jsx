@@ -6,7 +6,7 @@ import SecondaryPageHeroHeading from "@/Components/SecondaryPageHeroHeading";
 import { motion } from "motion/react"
 
 
-const ContactUs = () => {
+const M_ContactUs = () => {
 
 
     return (
@@ -15,7 +15,7 @@ const ContactUs = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className=" px-[10px]">
+            className=" px-[10px] switchMobile">
 
 
             {/* bullet */}
@@ -95,4 +95,4 @@ const ContactUs = () => {
 }
 
 
-export default ContactUs;
+export default M_ContactUs;
