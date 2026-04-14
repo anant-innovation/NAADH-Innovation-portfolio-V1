@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react"
 
 
-const Home = () => {
+const M_Home = () => {
 
 
 
@@ -39,7 +39,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className=" relative overflow-hidden">
+            className=" relative overflow-hidden switchMobile">
 
 
             {/* ******************************************* */}
@@ -363,4 +363,4 @@ const Home = () => {
 }
 
 
-export default Home
+export default M_Home

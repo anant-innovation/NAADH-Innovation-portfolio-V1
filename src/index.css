@@ -40,3 +40,38 @@ body{
 }
 
 
+
+
+.switchMobile{
+      display: block;
+}
+
+.switchDesktop{
+      display: none;
+}
+
+
+
+@media (max-width:900px) {
+      
+
+      .switchMobile{
+            display: block;
+      }
+
+
+      .switchDesktop{
+            display: none;
+      }
+}
+
+@media (min-width:900px){
+
+      .switchMobile{
+            display:none;
+      }
+
+      .switchDesktop{
+            display:block;
+      }
+}

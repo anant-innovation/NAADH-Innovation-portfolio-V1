@@ -14,7 +14,7 @@ import mobileWorkshopImage4 from "@/assets/Mobile/Workshop/mobileWorkshop4.jpg"
 
 
 
-const Workshop = () => {
+const M_Workshop = () => {
 
 
     return (
@@ -23,7 +23,7 @@ const Workshop = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className=" px-[10px]">
+            className=" px-[10px] switchMobile">
 
 
             {/* bullet */}
@@ -166,4 +166,4 @@ const Workshop = () => {
 }
 
 
-export default Workshop
+export default M_Workshop
