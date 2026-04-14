@@ -6,7 +6,7 @@ const D_Home = () => {
 
 
     return(
-        <div className=" text-8xl">
+        <div className=" text-8xl text-white switchDesktop">
             Desktop Home Page
         </div>
     );

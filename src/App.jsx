@@ -1,11 +1,11 @@
 import "@fontsource/inter";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Home from "./Pages/Mobile/Home";
+import Home from "./Pages/FinalRender/Home";
+import Gallery from "./Pages/Mobile/M_Gallery";
+import Workshop from "./Pages/Mobile/M_Workshop";
+import StemLAB from "./Pages/Mobile/M_StemLab";
+import ContactUs from "./Pages/Mobile/M_ContactUs";
 import MobileTabNavbar from "./Components/MobileTabNavbar";
-import Gallery from "./Pages/Mobile/Gallery";
-import Workshop from "./Pages/Mobile/Workshop";
-import StemLAB from "./Pages/Mobile/StemLAB";
-import ContactUs from "./Pages/Mobile/ContactUs";
 import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 
