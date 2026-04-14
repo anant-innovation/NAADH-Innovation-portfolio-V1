@@ -1,11 +1,11 @@
 
 
-const Text = ({text}) => {
+const Text = ({children}) => {
 
 
     return(
         <p>
-            {text}
+            {children}
         </p>
     );
 }
