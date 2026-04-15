@@ -83,7 +83,7 @@ const D_Home = () => {
 
 
                         {/* the bottom center arrow */}
-                        <ChevronDown/>
+                        <ChevronDown />
                     </div>
 
                 </div>
@@ -111,7 +111,7 @@ const D_Home = () => {
 
 
                     {/* the big container containing the text and the image */}
-                    <div className=" flex 
+                    <div className=" flex justify-between
                     
                     
                     w-[76rem]">
@@ -119,27 +119,30 @@ const D_Home = () => {
 
 
                         {/* the text container */}
-                        <div>
+                        <div className="
+                        
+                        
+                        ">
 
 
                             {/* the heading */}
-                            <Heading text={"What do we do?"}/>
+                            <Heading text={"What do we do?"} />
 
                             {/* the paragraph */}
                             <div>
 
                                 <Text>We’re a team focused on building drone technology and working on real-world engineering problems. <span className=" text-white">We build drones</span> for practical use cases like defence & agriculture, where they can make a real impact.
-                                
-                                <br />
 
-                                And teach students how to build them giving them exposure to electronics, flight systems, and the basics of engineering through workshops and lab setups. The idea is to keep it simple, interactive, and focused on learning by doing.
+                                    <br /> <br />
 
-                                <br />
+                                    And teach students how to build them giving them exposure to electronics, flight systems, and the basics of engineering through workshops and lab setups. The idea is to keep it simple, interactive, and focused on learning by doing.
 
-                                At the same time, we continue to explore and develop our own ideas in drone systems and related technologies.
+                                    <br /> <br />
+
+                                    At the same time, we continue to explore and develop our own ideas in drone systems and related technologies.
                                 </Text>
 
-                                
+
                             </div>
                         </div>
 
@@ -148,19 +151,16 @@ const D_Home = () => {
 
 
                         {/* the image container with the bullet */}
-                        <div className=" flex flex-col">
+                        <div className=" flex flex-col items-end">
 
 
                             {/* image with the borders */}
-                            <div>
-                                <ImageBorder src={DesktopHomeImage1} className={" w-[30rem]"}/>
-                            </div>
-
+                            <ImageBorder src={DesktopHomeImage1} />
 
 
                             {/* the bullet point below the image with right indentation */}
                             <div>
-                                {/* <BulletPoint text={"DRONE BUILDING WORKSHOP"}/> */}
+                                <BulletPoint text={"DRONE BUILDING WORKSHOP"} />
                             </div>
 
 

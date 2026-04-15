@@ -4,7 +4,11 @@ const Heading = ({text , classname}) => {
 
 
     return(
-        <h1 className={`text-3xl tracking-[-2%] font-extrabold text-white mb-[30px] ${classname}`}>{text}</h1>
+        <h1 className={`text-3xl tracking-[-2%] font-extrabold text-white mb-[30px] 
+            
+            3xl:text-5xl 3xl:mb-[40px]
+            
+            ${classname}`}>{text}</h1>
     );
 }
 
