@@ -11,12 +11,15 @@ import DesktopHomeImage2 from "@/assets/Desktop/Home/DesktopHome2.jpg"
 import DesktopHomeImage3 from "@/assets/Desktop/Home/DesktopHome3.jpg"
 import DesktopHomeImage4 from "@/assets/Desktop/Home/DesktopHome4.jpg"
 import DesktopHomeImage5 from "@/assets/Desktop/Home/DesktopHome5.jpg"
+import DesktopHomeImage6 from "@/assets/Desktop/Home/DesktopHome6.jpg"
+import DesktopHomeImage7 from "@/assets/Desktop/Home/DesktopHome7.jpg"
 
 
 import ImageBorder from "@/Components/ImageBorder";
 import WhiteHighlighter from "@/Components/WhiteHighlighter";
 import OrangeHighlighter from "@/Components/OrangeHighlighter";
 import Button from "@/Components/Button";
+import CardDesktop from "@/Components/CardDesktop";
 
 const D_Home = () => {
 
@@ -351,22 +354,25 @@ const D_Home = () => {
 
 
                         {/* small text */}
-                        <div className=" w-[40rem]">
+                        <div className=" w-[40rem] mb-[100px]">
                             <Text>We work with schools and colleges to bring more practical learning into the classroom. Our focus is on helping students understand how things work by actually building and experimenting.</Text>
                         </div>
 
 
 
                         {/* two cards container */}
-                        <div>
+                        <div className=" flex justify-around">
 
 
                             {/* card 1 */}
-
+                            <CardDesktop src={DesktopHomeImage6} heading={"WORKSHOPS"} paragraph={"We conduct hands-on workshops where students learn the basics of drones, electronics, and engineering."}/>
 
 
 
                             {/* card 2 */}
+                            <CardDesktop src={DesktopHomeImage7} heading={"STEM LABS"}
+                            paragraph={"We help institutions set up STEM labs where students can explore, test ideas, and work on small projects."}
+                            />
                         </div>
                     </div>
                 </div>
