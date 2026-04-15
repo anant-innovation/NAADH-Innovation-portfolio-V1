@@ -4,6 +4,11 @@ import { ChevronDown } from 'lucide-react';
 import Heading from "@/Components/Heading";
 import Text from "@/Components/Text";
 
+
+// images
+import DesktopHomeImage1 from "@/assets/Desktop/Home/DesktopHome1.jpg"
+import ImageBorder from "@/Components/ImageBorder";
+
 const D_Home = () => {
 
 
@@ -100,13 +105,16 @@ const D_Home = () => {
 
 
                 {/* what do we do section */}
-                <div className=" w-[100%] h-[30rem]">
+                <div className=" w-[100%] h-[50rem] flex justify-center ">
 
 
 
 
                     {/* the big container containing the text and the image */}
-                    <div>
+                    <div className=" flex 
+                    
+                    
+                    w-[76rem]">
 
 
 
@@ -140,7 +148,23 @@ const D_Home = () => {
 
 
                         {/* the image container with the bullet */}
-                        <div>
+                        <div className=" flex flex-col">
+
+
+                            {/* image with the borders */}
+                            <div>
+                                <ImageBorder src={DesktopHomeImage1} className={" w-[30rem]"}/>
+                            </div>
+
+
+
+                            {/* the bullet point below the image with right indentation */}
+                            <div>
+                                {/* <BulletPoint text={"DRONE BUILDING WORKSHOP"}/> */}
+                            </div>
+
+
+
 
                         </div>
                     </div>
