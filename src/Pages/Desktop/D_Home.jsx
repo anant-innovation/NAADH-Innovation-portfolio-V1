@@ -13,6 +13,10 @@ import DesktopHomeImage4 from "@/assets/Desktop/Home/DesktopHome4.jpg"
 import DesktopHomeImage5 from "@/assets/Desktop/Home/DesktopHome5.jpg"
 import DesktopHomeImage6 from "@/assets/Desktop/Home/DesktopHome6.jpg"
 import DesktopHomeImage7 from "@/assets/Desktop/Home/DesktopHome7.jpg"
+import DesktopHomeImage8 from "@/assets/Desktop/Home/DesktopHome8.jpg"
+import DesktopHomeImage9 from "@/assets/Desktop/Home/DesktopHome9.jpg"
+import DesktopHomeImage10 from "@/assets/Desktop/Home/DesktopHome10.jpg"
+import DesktopHomeImage11 from "@/assets/Desktop/Home/DesktopHome11.jpg"
 
 
 import ImageBorder from "@/Components/ImageBorder";
@@ -20,6 +24,7 @@ import WhiteHighlighter from "@/Components/WhiteHighlighter";
 import OrangeHighlighter from "@/Components/OrangeHighlighter";
 import Button from "@/Components/Button";
 import CardDesktop from "@/Components/CardDesktop";
+import MultipleImageContainer from "@/Components/MultipleImageContainer";
 
 const D_Home = () => {
 
@@ -120,7 +125,7 @@ const D_Home = () => {
 
 
                 {/* what do we do section */}
-                <div className=" w-[100%] mb-[200px] flex justify-center ">
+                <div className=" w-[100%] mb-[300px] flex justify-center ">
 
 
 
@@ -337,13 +342,13 @@ const D_Home = () => {
 
 
                 {/* the what we offer section */}
-                <div className=" flex justify-center bg-black py-[100px]">
+                <div className=" flex justify-center bg-black py-[100px] mb-[200px]">
 
 
 
 
                     {/* the container */}
-                    <div className=" w-[76rem]">
+                    <div className=" w-[76rem] mb-[100px]">
 
 
 
@@ -365,13 +370,13 @@ const D_Home = () => {
 
 
                             {/* card 1 */}
-                            <CardDesktop src={DesktopHomeImage6} heading={"WORKSHOPS"} paragraph={"We conduct hands-on workshops where students learn the basics of drones, electronics, and engineering."}/>
+                            <CardDesktop src={DesktopHomeImage6} heading={"WORKSHOPS"} paragraph={"We conduct hands-on workshops where students learn the basics of drones, electronics, and engineering."} />
 
 
 
                             {/* card 2 */}
                             <CardDesktop src={DesktopHomeImage7} heading={"STEM LABS"}
-                            paragraph={"We help institutions set up STEM labs where students can explore, test ideas, and work on small projects."}
+                                paragraph={"We help institutions set up STEM labs where students can explore, test ideas, and work on small projects."}
                             />
                         </div>
                     </div>
@@ -382,8 +387,59 @@ const D_Home = () => {
 
 
 
-                {/* the why choose us section */}
 
+
+
+
+
+
+                {/* the why choose us section */}
+                <div className=" flex justify-center">
+
+
+
+
+                    {/* the container */}
+                    <div className=" w-[76rem]">
+
+
+
+                        {/* the heading */}
+                        <Heading text={"Why Choose Us?"} />
+
+
+
+                        {/* the paragraph */}
+                        <Text className={"mb-[60px]"}>We’ve worked with students across different schools and colleges, conducting workshops that focus on practical learning and real understanding. Over time, we’ve learned what works and how to keep students engaged while making sure they actually learn something useful.</Text>
+
+
+
+                        {/* the image container with those nice lines */}
+                        <MultipleImageContainer className={"mb-[50px]"}>
+                            <div className="w-full">
+                                <div className="w-full flex h-[500px] mb-4">
+                                    <img className="rounded-sm w-[40%] object-cover mr-4" src={DesktopHomeImage8} alt="" />
+                                    <img className="rounded-sm w-[60%] object-cover" src={DesktopHomeImage9} alt="" />
+                                </div>
+
+
+
+                                <div className=" flex h-[500px]">
+                                    <img className="rounded-sm w-[50%] object-cover" src={DesktopHomeImage11} alt="" />
+
+                                    <img className="rounded-sm w-[48.5%] object-cover ml-4" src={DesktopHomeImage10} alt="" />
+                                </div>
+                            </div>
+                        </MultipleImageContainer>
+
+                        {/* the bullet  */}
+                        <div className=" flex justify-between">
+                            <Button outline={true} text={"Visit Gallery"}/>
+                            <BulletPoint text={"WE WILL LET THE PICTURES DO THE TALKING"}/>
+                        </div>
+
+                    </div>
+                </div>
 
 
 
