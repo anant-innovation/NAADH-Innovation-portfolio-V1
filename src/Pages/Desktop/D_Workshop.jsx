@@ -35,6 +35,7 @@ import { motion } from "motion/react"
 import Heading from "@/Components/Heading"
 import Button from "@/Components/Button"
 import ImageBorder from "@/Components/ImageBorder"
+import DesktopSecondaryHeroSections from "@/Components/DesktopSecondaryHeroSections"
 
 
 
@@ -64,20 +65,12 @@ const D_Workshop = () => {
 
 
                     {/* hero section */}
-                    <div className=" flex justify-between w-full h-[250px] mt-[60px] mb-[60px]">
-
-                        <div className=" ">
-                            <BulletPoint text={"ARCHIVES V1.0 | 21.03.2026"} className={" mb-[20px]"} sm={true} />
-                            <SecondaryPageHeroHeading heading={"NAADH Innovation Archive"} subText={"National Aerospace Agriculture Defence & Hospitality"} />
-                        </div>
-
-                        <div className=" w-[450px] flex items-end">
-                            <Text>Captured moments from live workshops, showcasing real-time fabrication, testing, and applied learning environments.</Text>
-                        </div>
-
-
-                    </div>
-                    <Divider mb={"200px"} />
+                    <DesktopSecondaryHeroSections bulletpointText={"ARCHIVES V1.0 | 21.03.2026"}
+                    
+                    heading={"NAADH Innovation Archive"}
+                    subText={"National Aerospace Agriculture Defence & Hospitality"}
+                    paragraphText={"Captured moments from live workshops, showcasing real-time fabrication, testing, and applied learning environments."}
+                    />
 
 
 
