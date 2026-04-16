@@ -43,7 +43,7 @@ const D_Home = () => {
 
 
                 {/* the hero section */}
-                <div className=" w-[100%] h-[93vh] grid-bg-desktop flex flex-col  justify-center relative
+                <div className=" w-[100%] h-[93vh] grid-bg-desktop flex flex-col  justify-center relative border-b border-white10
                 
                 
                 3xl:mb-[200px]">

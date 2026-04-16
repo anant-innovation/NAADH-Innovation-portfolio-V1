@@ -8,6 +8,7 @@ import ContactUs from "./Pages/FinalRender/ContactUs";
 import MobileTabNavbar from "./Components/MobileTabNavbar";
 import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+import DesktopNavbar from "./Components/DesktopNavbar";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <div>
       <MobileTabNavbar />
+      <DesktopNavbar/>
 
       <AnimatePresence mode="wait">
         <Routes location={currentLocation} key={currentLocation.pathname}>

@@ -96,7 +96,10 @@ const MobileTabNavbar = () => {
 
     return (
         <div className=" w-[100%] h-[4rem] bg-background flex items-center justify-between p-[10px] border-b border-white10 
-         sticky top-0 z-50">
+         sticky top-0 z-50
+         
+         
+         switchMobileNavbar">
 
 
             {/* NAADH Innovation left side */}

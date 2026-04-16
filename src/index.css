@@ -16,9 +16,9 @@
 
 
 
-      --breakpoint-xs:375px;
-      --breakpoint-3xl:1920px;
-      
+      --breakpoint-xs: 375px;
+      --breakpoint-3xl: 1920px;
+
 }
 
 .grid-bg {
@@ -59,7 +59,7 @@
 
 
 
-:root{
+:root {
       color-scheme: dark;
       line-height: 19px;
       /* line-height: normal; */
@@ -68,7 +68,7 @@
 
 
 
-body{
+body {
       color: #717171;
       font-family: var(--font-Inter);
 }
@@ -76,36 +76,60 @@ body{
 
 
 
-.switchMobile{
+.switchMobile {
       display: block;
 }
 
-.switchDesktop{
+.switchDesktop {
       display: none;
+}
+
+.switchMobileNavbar {
+      display: flex;
+}
+
+.switchDesktopNavbar {
+      display: flex;
 }
 
 
 
 @media (max-width:1024px) {
-      
 
-      .switchMobile{
+
+      .switchMobile {
             display: block;
       }
 
 
-      .switchDesktop{
+      .switchDesktop {
+            display: none;
+      }
+
+      .switchMobileNavbar {
+            display: flex;
+      }
+
+      .switchDesktopNavbar {
             display: none;
       }
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
 
-      .switchMobile{
-            display:none;
+      .switchMobile {
+            display: none;
       }
 
-      .switchDesktop{
-            display:block;
+      .switchDesktop {
+            display: block;
+      }
+
+      .switchMobileNavbar {
+            display: none;
+      }
+
+      .switchDesktopNavbar {
+            display: flex;
       }
 }
