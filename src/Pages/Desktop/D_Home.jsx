@@ -25,6 +25,7 @@ import OrangeHighlighter from "@/Components/OrangeHighlighter";
 import Button from "@/Components/Button";
 import CardDesktop from "@/Components/CardDesktop";
 import MultipleImageContainer from "@/Components/MultipleImageContainer";
+import D_ContactUsFooter from "@/Components/D_ContactUsFooter";
 
 const D_Home = () => {
 
@@ -394,7 +395,7 @@ const D_Home = () => {
 
 
                 {/* the why choose us section */}
-                <div className=" flex justify-center">
+                <div className=" flex justify-center mb-[300px]">
 
 
 
@@ -446,6 +447,7 @@ const D_Home = () => {
 
 
                 {/* the footer with contact us button section */}
+                <D_ContactUsFooter/>
             </div>
 
 
