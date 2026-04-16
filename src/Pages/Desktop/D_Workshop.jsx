@@ -17,6 +17,8 @@ import DesktopGalleryImage15 from "@/assets/Desktop/Gallery/DesktopGallery15.jpg
 import DesktopGalleryImage16 from "@/assets/Desktop/Gallery/DesktopGallery16.jpg"
 import DesktopGalleryImage17 from "@/assets/Desktop/Gallery/DesktopGallery17.jpg"
 import DesktopGalleryImage18 from "@/assets/Desktop/Gallery/DesktopGallery18.jpg"
+import founderImage from "@/assets/Desktop/Gallery/founderPicture.jpg"
+import co_founderImage from "@/assets/Desktop/Gallery/CofounderPicture.jpg"
 
 
 
@@ -32,6 +34,7 @@ import Text from "@/Components/Text";
 import { motion } from "motion/react"
 import Heading from "@/Components/Heading"
 import Button from "@/Components/Button"
+import ImageBorder from "@/Components/ImageBorder"
 
 
 
@@ -208,8 +211,8 @@ const D_Workshop = () => {
 
 
                     {/* bullet */}
-                    <div className=" w-full flex justify-end mb-[200px]">
-                        <BulletPoint sm={true} text={"NAADH INNOVATION ARCHIVE V1.0 | 21.03.26 "}/>
+                    <div className=" w-full flex justify-end mb-[150px]">
+                        <BulletPoint sm={true} text={"NAADH INNOVATION ARCHIVE V1.0 | 21.03.26 "} />
                     </div>
 
 
@@ -218,30 +221,92 @@ const D_Workshop = () => {
                     {/* bring this to your institue section */}
                     <div className=" w-full mb-[150px]">
 
-                        <Heading text={"Bring This To Your Institution"}/>
+                        <Heading text={"Bring This To Your Institution"} />
 
                         <div className=" flex justify-between items-end">
                             <Text>These are just a few moments from our sessions. <br /> If you’d like to organize something similar for your students, take a look at our workshops.</Text>
 
 
-                            <Button outline={true} text={"Workshops"}/>
+                            <Button outline={true} text={"Workshops"} />
                         </div>
                     </div>
 
 
-                    <Divider mb={"200px"}/>
+                    <Divider mb={"200px"} />
+
+
+
+
+
+
 
 
 
                     {/* the people behind Naadh innovation */}
-                    <div>
+                    <div className=" w-full mb-[300px]">
 
+
+                        {/* heading */}
+                        <Heading text={"The people behind NAADH Innovation"} />
+
+
+
+
+                        {/* paragraph */}
+                        <Text className={"mb-[150px]"}>Built through consistent effort, learning, and a genuine interest in how things work. <br />What started as curiosity has grown into a focused pursuit of building real systems and meaningful experiences.</Text>
+
+
+
+
+                        {/* container */}
+                        <div className=" flex justify-around">
+
+
+
+
+                            {/* founder  */}
+                            <div >
+                                <ImageBorder className={" w-[360px] mb-[40px]"} src={founderImage} />
+
+                                <div className=" w-full flex justify-end">
+                                    <BulletPoint sm={true} text={"FOUNDER"} />
+                                </div>
+
+
+
+                                <Text>Aryabhatta Ghost</Text>
+                                <Text>Cheif Technical Officer (CTO) <br />
+                                Director</Text>
+
+                            </div>
+
+
+
+
+
+
+
+                            {/* cofounder */}
+                            <div>
+                                <ImageBorder className={" w-[360px] mb-[40px]"} src={co_founderImage} />
+
+                                <div className=" w-full flex justify-end">
+                                    <BulletPoint sm={true} text={"CO FOUNDER"} />
+                                </div>
+
+
+
+                                <Text>Sudhanshu Gupta</Text>
+                                <Text>Cheif Executive Officer (CEO),<br />
+                                    Director</Text>
+                            </div>
+                        </div>
                     </div>
 
 
 
                     {/* contact us footer */}
-                    {/* <D_ContactUsFooter/> */}
+                    <D_ContactUsFooter/>
                 </div>
             </div>
         </motion.div>
