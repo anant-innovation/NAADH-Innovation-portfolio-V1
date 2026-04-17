@@ -177,7 +177,7 @@ const D_StemLab = () => {
                 {/* contact us footer */}
                 <D_ContactUsFooter />
             </div>
-        </motion.div>
+    </motion.div>
     );
 }
 
