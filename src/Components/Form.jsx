@@ -82,8 +82,9 @@ const Form = () => {
         console.log("working");
         console.log(data)
         toast("We have received your request",{
-            position:"bottom-right",
+            position:"bottom-left",
             description:"We will reach back to you shortly",
+            className:"text-white bg-black"
             
         })
     }
@@ -201,6 +202,7 @@ const Form = () => {
 
                                     <Input
                                         {...field}
+                                        type="number"
                                         id="ContactUsFormPhoneNumber"
                                         aria-invalid={fieldState.invalid}
                                         placeholder="+91 98765 43210"
@@ -321,7 +323,7 @@ const Form = () => {
 
 
 
-                    <Button type="submit" form="ContactUsForm">Submit</Button>
+                    <Button className={"bg-orange text-white hover:bg-orange  hover:cursor-pointer"} type="submit" form="ContactUsForm">Submit</Button>
                 </Field>
             </CardFooter>
 

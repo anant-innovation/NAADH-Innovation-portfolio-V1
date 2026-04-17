@@ -20,9 +20,9 @@ function App() {
 
     const timer = setTimeout(() => {
 
-      window.scrollTo(0,0)
+      window.scrollTo(0, 0)
     }, 400)
-    
+
     return () => clearTimeout(timer);
 
   }, [currentLocation])
@@ -32,16 +32,18 @@ function App() {
   return (
     <div>
       <MobileTabNavbar />
-      <DesktopNavbar/>
+      <DesktopNavbar />
 
       <AnimatePresence mode="wait">
-        <Routes location={currentLocation} key={currentLocation.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/workshop" element={<Workshop />} />
-          <Route path="/stemlab" element={<StemLAB />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-        </Routes>
+        
+          <Routes location={currentLocation} key={currentLocation.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/workshop" element={<Workshop />} />
+            <Route path="/stemlab" element={<StemLAB />} />
+            <Route path="/contactUs" element={<ContactUs />} />
+          </Routes>
+        
       </AnimatePresence>
     </div>
   )

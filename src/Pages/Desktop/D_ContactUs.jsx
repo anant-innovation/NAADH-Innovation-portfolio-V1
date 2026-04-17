@@ -18,7 +18,7 @@ const D_ContactUs = () => {
             <div className="w-full flex flex-col items-center">
 
             
-            <Toaster/>
+            <Toaster theme="dark"/>
 
 
                 {/* the container */}
