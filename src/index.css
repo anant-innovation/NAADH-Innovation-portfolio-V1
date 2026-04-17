@@ -5,23 +5,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-      --font-Inter: "Inter", sans-serif;
-      --color-background: #131313;
-      --color-white80: #d0d0d0;
-      --color-white40: #717171;
-      --color-white30: #616161;
-      --color-white20: #424242;
-      --color-white10: #292929;
-      --color-white5: #1f1f1f;
-      --color-orange: #e17100;
-      --color-bright-orange: #FF8509;
-      --color-white: #ffffff;
 
-      --breakpoint-xs: 375px;
-      --breakpoint-3xl: 1920px;
-
-}
 
 .grid-bg {
       background-image:
@@ -238,5 +222,25 @@ body {
     @apply font-sans;
 
       }
+
+}
+
+
+
+@theme {
+      --font-Inter: "Inter", sans-serif;
+      --color-background: #131313;
+      --color-white80: #d0d0d0;
+      --color-white40: #717171;
+      --color-white30: #616161;
+      --color-white20: #424242;
+      --color-white10: #292929;
+      --color-white5: #1f1f1f;
+      --color-orange: #e17100;
+      --color-bright-orange: #FF8509;
+      --color-white: #ffffff;
+
+      --breakpoint-xs: 375px;
+      --breakpoint-3xl: 1920px;
 
 }

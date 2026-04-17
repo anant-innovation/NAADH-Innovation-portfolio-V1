@@ -1,9 +1,11 @@
 import D_ContactUsFooter from "@/Components/D_ContactUsFooter";
 import DesktopSecondaryHeroSections from "@/Components/DesktopSecondaryHeroSections";
+import Form from "@/Components/Form";
 import Heading from "@/Components/Heading";
 import SecondaryPageHeroHeading from "@/Components/SecondaryPageHeroHeading";
 import Text from "@/Components/Text";
 import { motion } from "motion/react";
+import { Toaster } from "sonner";
 
 const D_ContactUs = () => {
 
@@ -15,7 +17,8 @@ const D_ContactUs = () => {
             {/* the big container */}
             <div className="w-full flex flex-col items-center">
 
-
+            
+            <Toaster/>
 
 
                 {/* the container */}
@@ -70,7 +73,7 @@ const D_ContactUs = () => {
 
 
                         {/* the form */}
-                        
+                        <Form/>
 
 
 
