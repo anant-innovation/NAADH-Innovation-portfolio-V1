@@ -1,11 +1,11 @@
 
 
-const BulletPoint = ({text, sm}) => {
+const BulletPoint = ({text, sm, className}) => {
 
     if(sm){
 
         return (
-        <div className=" bg-background border border-white10 py-1 px-2 inline-flex items-center justify-between">
+        <div className={`bg-background border border-white10 py-1 px-2 inline-flex items-center justify-between ${className}`}>
 
             {/* ORANGE BULLET */}
             <div className=" bg-orange w-[8px] h-[8px] mr-2"></div>
@@ -17,7 +17,7 @@ const BulletPoint = ({text, sm}) => {
     }
 
     return (
-        <div className=" bg-background border border-white10 py-1 px-2 inline-flex items-center justify-between">
+        <div className={` bg-background border border-white10 py-1 px-2 inline-flex items-center justify-between ${className}`}>
 
             {/* ORANGE BULLET */}
             <div className=" bg-orange w-[8px] h-[8px] mr-2"></div>

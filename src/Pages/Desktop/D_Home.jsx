@@ -25,6 +25,7 @@ import OrangeHighlighter from "@/Components/OrangeHighlighter";
 import Button from "@/Components/Button";
 import CardDesktop from "@/Components/CardDesktop";
 import MultipleImageContainer from "@/Components/MultipleImageContainer";
+import D_ContactUsFooter from "@/Components/D_ContactUsFooter";
 
 const D_Home = () => {
 
@@ -42,7 +43,7 @@ const D_Home = () => {
 
 
                 {/* the hero section */}
-                <div className=" w-[100%] h-[93vh] grid-bg-desktop flex flex-col  justify-center relative
+                <div className=" w-[100%] h-[93vh] grid-bg-desktop flex flex-col  justify-center relative border-b border-white10
                 
                 
                 3xl:mb-[200px]">
@@ -394,7 +395,7 @@ const D_Home = () => {
 
 
                 {/* the why choose us section */}
-                <div className=" flex justify-center">
+                <div className=" flex justify-center mb-[300px]">
 
 
 
@@ -446,6 +447,7 @@ const D_Home = () => {
 
 
                 {/* the footer with contact us button section */}
+                <D_ContactUsFooter/>
             </div>
 
 
