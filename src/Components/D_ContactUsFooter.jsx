@@ -58,8 +58,7 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
                     {/* container 2 */}
-                    <div className="
-                    
+                    <div className=" 
                     ">
 
 
@@ -76,7 +75,6 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
                     {/* container 3 */}
                     <div className="
-                    
                     ">
                         <h1 className=" text-white text-xl mb-[5px]">Careers</h1>
                     </div>
@@ -85,10 +83,9 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
                     {/* container 4 */}
                     <div className="
-                    
                     ">
                         <h1 className=" text-white text-xl mb-[5px]
-                        lg:ml-[5px]">Privacy Policy</h1>
+                        ">Privacy Policy</h1>
                     </div>
 
 
@@ -99,11 +96,13 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
                         {/* contact us button */}
-                        {contactUsButton && <Button link={"/contactus"} classname={"mb-[30px]"} solid={true} text={"Contact Us"} />}
+                        {contactUsButton ? <Button link={"/contactus"} classname={"mb-[30px]"} solid={true} text={"Contact Us"} /> :
+
+                        <div className=" w-[30px] h-[60px]" />}
 
 
                         {/* phone number and email */}
-                        <p className=" mb-[10px]">contact@naadhinnovation.com</p>
+                        <p className=" mb-[10px] absolute bottom-[200px]  right-0">contact@naadhinnovation.com</p>
                         <p>+91 86373 82771</p>
                         <p>+91 80015 03977</p>
                     </div>

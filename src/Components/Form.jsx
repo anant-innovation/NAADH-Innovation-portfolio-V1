@@ -96,7 +96,7 @@ const Form = () => {
 
 
     return (
-        <Card className={" w-[500px] dark"}>
+        <Card className={" lg:w-[400px] xl:w-[500px] dark"}>
 
 
             <CardHeader>

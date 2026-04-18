@@ -32,7 +32,9 @@ const D_ContactUs = () => {
                 <div className=" flex flex-col items-center
                 
                 
-                w-[76rem]">
+                lg:w-[58rem]
+                xl:w-[66rem]
+                2xl:w-[76rem]">
 
 
 
