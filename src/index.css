@@ -241,6 +241,7 @@ body {
       --color-orange: #e17100;
       --color-bright-orange: #FF8509;
       --color-white: #ffffff;
+      --color-background-level2:#0b0b0b;
 
       --breakpoint-sm: 640px;
       --breakpoint-md: 768px;
