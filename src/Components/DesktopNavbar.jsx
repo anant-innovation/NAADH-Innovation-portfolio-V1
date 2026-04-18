@@ -19,7 +19,8 @@ const DesktopNavbar = () => {
 
 
                 {/* NAADH INNOVATION NAME */}
-                <h1>NAADH Innovation</h1>
+                <Link to={"/"} className=" custom-cursor hover:text-white80"
+                >NAADH Innovation</Link>
 
 
 

@@ -83,7 +83,7 @@ const D_ContactUsFooter = ({contactUsButton = true}) => {
 
 
                         {/* contact us button */}
-                        {contactUsButton && <Button classname={"mb-[30px]"} solid={true} text={"Contact Us"} />}
+                        {contactUsButton && <Button link={"/contactus"} classname={"mb-[30px]"} solid={true} text={"Contact Us"} />}
                         
 
                         {/* phone number and email */}

@@ -10,6 +10,8 @@ const Button = ({ link, text, classname, outline, solid }) => {
             
               custom-cursor
 
+              hover:bg-white hover:text-black
+
             ${classname}`}>{text}</button>
             </Link>
         );
@@ -24,6 +26,8 @@ const Button = ({ link, text, classname, outline, solid }) => {
             <Link to={link}><button className={`bg-orange px-4 py-1 text-white text-lg rounded-xs 
             
             custom-cursor
+
+             hover:bg-bright-orange
             
             ${classname}`}>{text}</button>
             </Link>
