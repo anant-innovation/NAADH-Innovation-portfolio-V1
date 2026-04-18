@@ -119,7 +119,8 @@ const D_Home = () => {
                             {/* the left side thingy */}
                             <div className="p-2 border border-white10 bg-background absolute left-[50px]  text-xs
                         
-                        lg:bottom-2
+                        
+                        lg:max-[1280px]:hidden
                         xl:bottom-1">
 
                                 <p className=" text-orange">LAT/LONG CALIBRATION</p>
