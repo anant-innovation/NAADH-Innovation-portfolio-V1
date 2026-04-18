@@ -11,7 +11,11 @@ const CardDesktop = ({ src, heading, paragraph, path }) => {
         <Link to={path} className="custom-cursor hover:scale-105 transition-all duration-300 ease-out">
 
             {/* the actual card */}
-            <div className=" custom-cursor bg-background w-[400px] p-[25px] relative">
+            <div className=" custom-cursor bg-background  p-[25px] relative
+            
+
+            lg:w-[350px]
+            xl:w-[400px]">
 
 
                 <div className=" custom-cursor bg-white10 w-[calc(100%+60px)] h-[2px]

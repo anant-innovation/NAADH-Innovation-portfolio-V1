@@ -66,18 +66,22 @@ const D_Home = () => {
 
 
                         {/* the bullet point */}
-                        <div className=" mb-[30px]">
+                        <div className=" 
+                        
+                        lg:mb-[20px]
+                        xl:mb-[30px]">
                             <BulletPoint text={"NAADH INNOVATION V1.0"} />
                         </div>
 
 
 
                         {/* the main writing */}
-                        <div className=" flex flex-col justify-center items-center text-white font-black mb-[60px]
+                        <div className=" flex flex-col justify-center items-center text-white font-black 
                             
-                            
-                            lg:text-7xl lg:leading-[70px]
-                            
+                            lg:text-6xl lg:mb-[30px] 
+
+                            xl:text-7xl xl:leading-[70px] xl:mb-[60px]
+
                             r1700:text-8xl r1700:tracking-[-4%] r1700:leading-none
                             ">
                             <h1>NAADH Innovation:</h1>
@@ -95,12 +99,15 @@ const D_Home = () => {
 
 
 
-                    {/* the bottom right side thingy and the arrow with bobbing animation */}
+                    {/* the bottom left side thingy and the arrow with bobbing animation */}
 
                     <div className="w-[100%] flex justify-center absolute bottom-[30px]">
 
-                        {/* the right side thingy */}
-                        <div className="p-2 border border-white10 bg-background absolute left-[50px] bottom-1 text-xs">
+                        {/* the left side thingy */}
+                        <div className="p-2 border border-white10 bg-background absolute left-[50px]  text-xs
+                        
+                        lg:bottom-2
+                        xl:bottom-1">
 
                             <p className=" text-orange">LAT/LONG CALIBRATION</p>
                             <p className=" text-white">28.6139° N, 77.2090° E</p>
@@ -145,6 +152,7 @@ const D_Home = () => {
                     {/* the big container containing the text and the image */}
                     <div className=" flex justify-between
                     
+                    lg:w-[58rem]
                     xl:w-[66rem]
                     2xl:w-[76rem]">
 
@@ -189,7 +197,13 @@ const D_Home = () => {
 
 
                             {/* image with the borders */}
-                            <ImageBorder className={"ml-[100px] mb-[40px] mt-[30px] w-[527px]"} src={DesktopHomeImage1} />
+                            <ImageBorder className={`ml-[100px] mb-[40px] mt-[30px] 
+                            
+                            lg:w-[440px]
+                            xl:w-[527px]`} 
+                            
+                            
+                            src={DesktopHomeImage1} />
 
 
                             {/* the bullet point below the image with right indentation */}
@@ -223,7 +237,7 @@ const D_Home = () => {
                     {/* internal container */}
                     <div className=" flex flex-col justify-center
                     
-                    
+                    lg:w-[58rem]
                     xl:w-[66rem]
                     2xl:w-[76rem]">
 
@@ -317,7 +331,7 @@ const D_Home = () => {
                     {/* container */}
                     <div className="  flex
                     
-                    
+                    lg:w-[58rem]
                     xl:w-[66rem]
                     2xl:w-[76rem]">
 
@@ -370,12 +384,21 @@ const D_Home = () => {
 
 
                             {/* the image with borders */}
-                            <ImageBorder className={"ml-[100px] mb-[40px] mt-[30px] w-[527px]"} src={DesktopHomeImage5} />
+                            <ImageBorder className={`ml-[100px] mb-[40px]  
+                            
+
+                            lg:w-[440px] lg:mt-[60px]
+                            xl:w-[527px] xl:mt-[30px]`} 
+                            
+                            src={DesktopHomeImage5} />
 
 
 
                             {/* the bullet */}
-                            <div className=" absolute bottom-[-30px] right-0">
+                            <div className=" absolute 
+                            
+                            lg:bottom-[20px]
+                            xl:bottom-[-30px] right-0">
                                 <BulletPoint sm={true} text={"DEDICATED TO THE PROCESS"} />
                             </div>
                         </div>
@@ -395,16 +418,19 @@ const D_Home = () => {
 
 
                 {/* the what we offer section */}
-                <div className=" flex justify-center bg-black py-[100px] mb-[200px]">
+                <div className=" flex justify-center bg-black  
+                
+                lg:mb-[150px] lg:py-[100px]
+                xl:mb-[200px] xl:py-[100px]">
 
 
 
 
                     {/* the container */}
-                    <div className=" mb-[100px]
+                    <div className=" 
                     
-                    
-                    xl:w-[66rem]
+                    lg:w-[58rem]
+                    xl:w-[66rem] xl:mb-[100px]
                     2xl:w-[76rem]">
 
 
@@ -463,7 +489,7 @@ const D_Home = () => {
                     {/* the container */}
                     <div className=" 
                     
-                    
+                    lg:w-[58rem]
                     xl:w-[66rem]
                     2xl:w-[76rem]">
 
@@ -484,7 +510,10 @@ const D_Home = () => {
                             <div className="w-full">
                                 <div className="w-full flex h-[500px] mb-4">
 
-                                    <div className=" w-[55%] mr-4">
+                                    <div className=" xl:w-[55%]
+                                    
+                                    lg:w-[85%]
+                                    mr-4">
                                         <Image src={DesktopHomeImage8}/>
                                     </div>
 
@@ -526,7 +555,7 @@ const D_Home = () => {
 
 
                 {/* the footer with contact us button section */}
-                <D_ContactUsFooter />
+                {/* <D_ContactUsFooter /> */}
             </div>
 
 
