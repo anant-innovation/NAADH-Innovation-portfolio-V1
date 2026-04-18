@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 
 
 const DesktopNavbar = () => {
+
+
+    // get current location
+    const currentLocation = useLocation()
 
 
 
@@ -21,11 +25,21 @@ const DesktopNavbar = () => {
 
                 {/* routes container */}
                 <div className=" flex justify-between w-[28rem] text-lg"> 
-                    <Link to={"/"}>Home</Link>
-                    <Link to={"/workshop"}>Workshops</Link>
-                    <Link to={"/stemlab"}>STEMLab</Link>
-                    <Link to={"/gallery"}>Gallery</Link>
-                    <Link to={"/contactus"}>Contact</Link>
+                    <Link
+                    className={currentLocation.pathname === "/" && "text-orange"}
+                    to={"/"}>Home</Link>
+                    <Link
+                    className={currentLocation.pathname === "/workshop" && "text-orange"}
+                    to={"/workshop"}>Workshops</Link>
+                    <Link
+                    className={currentLocation.pathname === "/stemlab" && "text-orange"}
+                    to={"/stemlab"}>STEMLab</Link>
+                    <Link
+                    className={currentLocation.pathname === "/gallery" && "text-orange"}
+                    to={"/gallery"}>Gallery</Link>
+                    <Link
+                    className={currentLocation.pathname === "/contactus" && "text-orange"}
+                    to={"/contactus"}>Contact</Link>
                 </div>
 
 
