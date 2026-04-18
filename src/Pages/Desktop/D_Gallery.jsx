@@ -223,7 +223,7 @@ const D_Gallery = () => {
                             <Text>These are just a few moments from our sessions. <br /> If you’d like to organize something similar for your students, take a look at our workshops.</Text>
 
 
-                            <Button outline={true} text={"Workshops"} />
+                            <Button link={"/workshop"} outline={true} text={"Workshops"} />
                         </div>
                     </div>
 

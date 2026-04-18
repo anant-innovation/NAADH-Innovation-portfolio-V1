@@ -188,7 +188,7 @@ const D_Home = () => {
 
                             {/* the bullet point below the image with right indentation */}
                             <div>
-                                <BulletPoint text={"DRONE BUILDING WORKSHOP"} />
+                                <BulletPoint sm={true} text={"DRONE BUILDING WORKSHOP"} />
                             </div>
 
 
@@ -314,11 +314,11 @@ const D_Home = () => {
 
 
                                 {/* button 1 */}
-                                <Button classname={"mr-[20px]"} solid={true} text={"Contact Us"} />
+                                <Button link={"/contactus"} classname={"mr-[20px]"} solid={true} text={"Contact Us"} />
 
 
                                 {/* button 2 */}
-                                <Button outline={true} text={"Details"} />
+                                <Button link={"/workshop"} outline={true} text={"Details"} />
                             </div>
                         </div>
 
@@ -337,8 +337,8 @@ const D_Home = () => {
 
 
                             {/* the bullet */}
-                            <div className=" absolute bottom-[40px] right-0">
-                                <BulletPoint text={"DEDICATED TO THE PROCESS"} />
+                            <div className=" absolute bottom-[25px] right-0">
+                                <BulletPoint sm={true} text={"DEDICATED TO THE PROCESS"} />
                             </div>
                         </div>
 
@@ -385,13 +385,17 @@ const D_Home = () => {
 
 
                             {/* card 1 */}
-                            <CardDesktop src={DesktopHomeImage6} heading={"WORKSHOPS"} paragraph={"We conduct hands-on workshops where students learn the basics of drones, electronics, and engineering."} />
+                            <CardDesktop src={DesktopHomeImage6} heading={"WORKSHOPS"} paragraph={"We conduct hands-on workshops where students learn the basics of drones, electronics, and engineering."}
+                                path={"/workshop"}
+                            />
 
 
 
                             {/* card 2 */}
                             <CardDesktop src={DesktopHomeImage7} heading={"STEM LABS"}
                                 paragraph={"We help institutions set up STEM labs where students can explore, test ideas, and work on small projects."}
+
+                                path={"/stemlab"}
                             />
                         </div>
                     </div>
@@ -449,7 +453,7 @@ const D_Home = () => {
 
                         {/* the bullet  */}
                         <div className=" flex justify-between">
-                            <Button classname={" mt-[30px]"} outline={true} text={"Visit Gallery"} />
+                            <Button link={"/gallery"} classname={" mt-[30px]"} outline={true} text={"Visit Gallery"} />
                             <div>
                                 <BulletPoint sm={true} text={"WE WILL LET THE PICTURES DO THE TALKING"} />
                             </div>

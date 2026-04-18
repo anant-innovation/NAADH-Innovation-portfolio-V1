@@ -25,20 +25,25 @@ const DesktopNavbar = () => {
 
                 {/* routes container */}
                 <div className=" flex justify-between w-[28rem] text-lg"> 
+
                     <Link
-                    className={currentLocation.pathname === "/" && "text-orange"}
+                    className={`custom-cursor ${currentLocation.pathname === "/" && "text-orange"}`}
                     to={"/"}>Home</Link>
+
                     <Link
-                    className={currentLocation.pathname === "/workshop" && "text-orange"}
+                    className={`custom-cursor ${currentLocation.pathname === "/workshop" && "text-orange"}`}
                     to={"/workshop"}>Workshops</Link>
+
                     <Link
-                    className={currentLocation.pathname === "/stemlab" && "text-orange"}
+                    className={`custom-cursor ${currentLocation.pathname === "/stemlab" && "text-orange"}`}
                     to={"/stemlab"}>STEMLab</Link>
+
                     <Link
-                    className={currentLocation.pathname === "/gallery" && "text-orange"}
+                    className={`custom-cursor ${currentLocation.pathname === "/gallery" && "text-orange"}`}
                     to={"/gallery"}>Gallery</Link>
+
                     <Link
-                    className={currentLocation.pathname === "/contactus" && "text-orange"}
+                    className={`custom-cursor ${currentLocation.pathname === "/contactus" && "text-orange"}`}
                     to={"/contactus"}>Contact</Link>
                 </div>
 

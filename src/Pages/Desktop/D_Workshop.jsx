@@ -151,7 +151,7 @@ const D_Workshop = () => {
 
                         {/* the gallery button */}
                         <div className=" w-full justify-start">
-                            <Button outline={true} text={"Gallery"} />
+                            <Button link={"/gallery"} outline={true} text={"Gallery"} />
                         </div>
                     </div>
 
