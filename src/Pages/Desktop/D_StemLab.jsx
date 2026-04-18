@@ -34,7 +34,9 @@ const D_StemLab = () => {
                 {/* the responsive container */}
                 <div className=" flex flex-col items-center
                 
-                w-[76rem]">
+                lg:w-[58rem]
+                xl:w-[66rem]
+                2xl:w-[76rem]">
 
 
 
@@ -84,7 +86,8 @@ const D_StemLab = () => {
                                 <ul className=" list-disc marker:text-white text-lg
                              leading-[22px]
                             
-                             mb-[150px]
+                             lg:mb-[70px]
+                             2xl:mb-[150px]
                             ">
                                     <li className=" mb-[14px]"><WhiteHighlighter>Basic Electronics and Components :</WhiteHighlighter>  A range of essential components that allow students to understand and work with real systems.</li>
 
