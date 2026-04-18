@@ -26,6 +26,7 @@ import Button from "@/Components/Button";
 import CardDesktop from "@/Components/CardDesktop";
 import MultipleImageContainer from "@/Components/MultipleImageContainer";
 import D_ContactUsFooter from "@/Components/D_ContactUsFooter";
+import Image from "@/Components/Image";
 
 const D_Home = () => {
 
@@ -51,7 +52,7 @@ const D_Home = () => {
                 <div className=" w-[100%] h-[93vh] grid-bg-desktop flex flex-col  justify-center relative border-b border-white10
                 
                 
-                3xl:mb-[200px]">
+                lg:mb-[200px]">
 
 
 
@@ -75,8 +76,9 @@ const D_Home = () => {
                         <div className=" flex flex-col justify-center items-center text-white font-black mb-[60px]
                             
                             
-
-                            3xl:text-8xl 3xl:tracking-[-4%]
+                            lg:text-7xl lg:leading-[70px]
+                            
+                            r1700:text-8xl r1700:tracking-[-4%] r1700:leading-none
                             ">
                             <h1>NAADH Innovation:</h1>
                             <h1>Engineering the <span className=" text-orange">Future</span></h1>
@@ -131,7 +133,11 @@ const D_Home = () => {
 
 
                 {/* what do we do section */}
-                <div className=" w-[100%] mb-[300px] flex justify-center ">
+                <div className=" w-[100%]  flex justify-center 
+                
+                
+                
+                mb-[250px]">
 
 
 
@@ -139,8 +145,8 @@ const D_Home = () => {
                     {/* the big container containing the text and the image */}
                     <div className=" flex justify-between
                     
-                    
-                    w-[76rem]">
+                    xl:w-[66rem]
+                    2xl:w-[76rem]">
 
 
 
@@ -218,7 +224,8 @@ const D_Home = () => {
                     <div className=" flex flex-col justify-center
                     
                     
-                    w-[76rem]">
+                    xl:w-[66rem]
+                    2xl:w-[76rem]">
 
 
 
@@ -247,9 +254,36 @@ const D_Home = () => {
                         <div className=" relative w-full flex justify-between
                         
                         ">
-                            <ImageBorder className={" w-[320px]"} src={DesktopHomeImage2} />
-                            <ImageBorder className={" w-[320px]"} src={DesktopHomeImage3} />
-                            <ImageBorder className={" w-[320px]"} src={DesktopHomeImage4} />
+
+                            <div className=" droneDevelopment3Images-singularFrame
+                            
+                            w-full flex justify-between">
+                                <ImageBorder className={" w-[320px]"} src={DesktopHomeImage2} />
+                                <ImageBorder className={" w-[320px]"} src={DesktopHomeImage3} />
+                                <ImageBorder className={" w-[320px]"} src={DesktopHomeImage4} />
+                            </div>
+
+
+
+                            <div className=" droneDevelopment3Images-CombinedFrame
+
+                             w-full justify-center
+                            ">
+                                <MultipleImageContainer className={"w-full flex justify-between"}>
+
+                                    <div className=" mr-4">
+                                        <Image src={DesktopHomeImage2} alt="" />
+                                    </div>
+
+                                    <div className=" mr-4">
+                                        <Image src={DesktopHomeImage3} alt="" />
+                                    </div>
+
+                                    <div className="">
+                                        <Image src={DesktopHomeImage4} alt="" />
+                                    </div>
+                                </MultipleImageContainer>
+                            </div>
 
                             <div className=" absolute bottom-[-80px] left-0">
                                 <BulletPoint sm={true} text={"TESTED UNDER REAL CONDITIONS"} />
@@ -281,7 +315,11 @@ const D_Home = () => {
 
 
                     {/* container */}
-                    <div className=" w-[76rem] flex">
+                    <div className="  flex
+                    
+                    
+                    xl:w-[66rem]
+                    2xl:w-[76rem]">
 
 
 
@@ -337,7 +375,7 @@ const D_Home = () => {
 
 
                             {/* the bullet */}
-                            <div className=" absolute bottom-[25px] right-0">
+                            <div className=" absolute bottom-[-30px] right-0">
                                 <BulletPoint sm={true} text={"DEDICATED TO THE PROCESS"} />
                             </div>
                         </div>
@@ -363,7 +401,11 @@ const D_Home = () => {
 
 
                     {/* the container */}
-                    <div className=" w-[76rem] mb-[100px]">
+                    <div className=" mb-[100px]
+                    
+                    
+                    xl:w-[66rem]
+                    2xl:w-[76rem]">
 
 
 
@@ -419,7 +461,11 @@ const D_Home = () => {
 
 
                     {/* the container */}
-                    <div className=" w-[76rem]">
+                    <div className=" 
+                    
+                    
+                    xl:w-[66rem]
+                    2xl:w-[76rem]">
 
 
 
@@ -437,16 +483,29 @@ const D_Home = () => {
                         <MultipleImageContainer className={"mb-[50px]"}>
                             <div className="w-full">
                                 <div className="w-full flex h-[500px] mb-4">
-                                    <img className="rounded-sm w-[40%] object-cover mr-4" src={DesktopHomeImage8} alt="" />
-                                    <img className="rounded-sm w-[60%] object-cover" src={DesktopHomeImage9} alt="" />
+
+                                    <div className=" w-[55%] mr-4">
+                                        <Image src={DesktopHomeImage8}/>
+                                    </div>
+
+
+                                    <div>
+                                        <Image src={DesktopHomeImage9}/>
+                                    </div>
                                 </div>
 
 
 
                                 <div className=" flex h-[500px]">
-                                    <img className="rounded-sm w-[50%] object-cover" src={DesktopHomeImage11} alt="" />
 
-                                    <img className="rounded-sm w-[48.5%] object-cover ml-4" src={DesktopHomeImage10} alt="" />
+                                    <div className=" w-[74%] mr-4">
+                                        <Image src={DesktopHomeImage11}/>
+                                    </div>
+
+
+                                    <div>
+                                        <Image src={DesktopHomeImage10}/>
+                                    </div>
                                 </div>
                             </div>
                         </MultipleImageContainer>

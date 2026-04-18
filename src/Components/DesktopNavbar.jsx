@@ -15,7 +15,11 @@ const DesktopNavbar = () => {
 
 
             {/* container */}
-            <div className=" w-full flex justify-between items-center text-xl">
+            <div className=" w-full flex justify-between items-center 
+            
+            lg:text-sm
+            lg-1:text-lg
+            2xl:text-xl">
 
 
                 {/* NAADH INNOVATION NAME */}
@@ -25,7 +29,11 @@ const DesktopNavbar = () => {
 
 
                 {/* routes container */}
-                <div className=" flex justify-between w-[28rem] text-lg"> 
+                <div className=" flex justify-between  
+                
+                lg:text-sm lg:w-[22rem]
+                lg-1:text-base lg-1:w-[24rem]
+                2xl:text-lg 2xl:w-[28rem]"> 
 
                     <Link
                     className={`custom-cursor ${currentLocation.pathname === "/" && "text-orange"}`}
