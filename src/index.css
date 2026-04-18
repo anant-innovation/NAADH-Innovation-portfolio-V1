@@ -244,3 +244,13 @@ body {
       --breakpoint-3xl: 1920px;
 
 }
+
+
+
+.custom-cursor{
+      cursor: url("./assets/Cursors/hand-pointer.png"), auto;
+}
+
+* {
+      cursor: url("./assets/Cursors/arrowhead-rounded-outline.png"),auto;
+}

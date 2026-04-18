@@ -33,7 +33,12 @@ const D_Home = () => {
 
 
     return (
-        <motion.div className="switchDesktop">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className="switchDesktop">
 
             {/* the biggest container */}
             <div className=" bg-background flex flex-col justify-center">
@@ -224,7 +229,11 @@ const D_Home = () => {
 
 
                         {/* the paragraph */}
-                        <Text className={"mb-[100px]"}>We are working towards building drones that can be used in areas like agriculture and defense, where they can actually solve real problems and create a impact.
+                        <Text className={"mb-[100px]"}>We are working towards building drones that can be used in areas like
+                            <OrangeHighlighter> agriculture</OrangeHighlighter> &
+                            <OrangeHighlighter> defense</OrangeHighlighter>
+
+                            , where they can actually solve real problems and create a impact.
 
                             <br /><br />
                             Our focus is on understanding how these systems work from the ground up from basic electronics and flight control to how different components come together to make a reliable system. We spend a lot of time experimenting, testing ideas, and learning through trial and error.Along the way, we’re also exploring how drones can be adapted for different use cases whether it’s monitoring fields, collecting data, or handling tasks that are difficult or time-consuming for humans.
@@ -292,7 +301,12 @@ const D_Home = () => {
 
                                 During these sessions, students get to see how different components come together from basic circuits to the fundamentals of how a drone flies. We keep the approach simple so that even beginners can follow along and feel comfortable experimenting.
                                 <br /> <br />
-                                The goal is to make learning more practical and interesting, and to give students a sense of what real-world engineering looks like. It’s not just about completing a session, but about helping them build curiosity and confidence to explore further on their own.</Text>
+                                <WhiteHighlighter>The goal is to make learning more </WhiteHighlighter>
+
+                                <OrangeHighlighter> practical </OrangeHighlighter>
+                                &
+                                <OrangeHighlighter> interesting </OrangeHighlighter>
+                                , and to give students a sense of what real-world engineering looks like. It’s not just about completing a session, but about helping them build curiosity and confidence to explore further on their own.</Text>
 
 
                             {/* container for the two buttons */}
@@ -435,8 +449,10 @@ const D_Home = () => {
 
                         {/* the bullet  */}
                         <div className=" flex justify-between">
-                            <Button outline={true} text={"Visit Gallery"}/>
-                            <BulletPoint text={"WE WILL LET THE PICTURES DO THE TALKING"}/>
+                            <Button classname={" mt-[30px]"} outline={true} text={"Visit Gallery"} />
+                            <div>
+                                <BulletPoint sm={true} text={"WE WILL LET THE PICTURES DO THE TALKING"} />
+                            </div>
                         </div>
 
                     </div>
@@ -447,7 +463,7 @@ const D_Home = () => {
 
 
                 {/* the footer with contact us button section */}
-                <D_ContactUsFooter/>
+                <D_ContactUsFooter />
             </div>
 
 

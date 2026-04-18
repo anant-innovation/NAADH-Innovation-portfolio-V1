@@ -17,7 +17,12 @@ const D_StemLab = () => {
 
 
     return (
-        <motion.div className=" switchDesktop">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" switchDesktop">
 
 
             {/* the big container */}
@@ -177,7 +182,7 @@ const D_StemLab = () => {
                 {/* contact us footer */}
                 <D_ContactUsFooter />
             </div>
-    </motion.div>
+        </motion.div>
     );
 }
 

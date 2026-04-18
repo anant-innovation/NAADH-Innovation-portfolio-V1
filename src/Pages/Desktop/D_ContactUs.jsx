@@ -2,8 +2,10 @@ import D_ContactUsFooter from "@/Components/D_ContactUsFooter";
 import DesktopSecondaryHeroSections from "@/Components/DesktopSecondaryHeroSections";
 import Form from "@/Components/Form";
 import Heading from "@/Components/Heading";
+import OrangeHighlighter from "@/Components/OrangeHighlighter";
 import SecondaryPageHeroHeading from "@/Components/SecondaryPageHeroHeading";
 import Text from "@/Components/Text";
+import WhiteHighlighter from "@/Components/WhiteHighlighter";
 import { motion } from "motion/react";
 import { Toaster } from "sonner";
 
@@ -12,13 +14,18 @@ const D_ContactUs = () => {
 
 
     return (
-        <motion.div className=" switchDesktop">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" switchDesktop">
 
             {/* the big container */}
             <div className="w-full flex flex-col items-center">
 
-            
-            <Toaster theme="dark"/>
+
+                <Toaster theme="dark" />
 
 
                 {/* the container */}
@@ -59,7 +66,7 @@ const D_ContactUs = () => {
 
 
                             <Text>
-                                Contact Numbers :
+                                <OrangeHighlighter>We are just a call away</OrangeHighlighter>
                                 <br /><br />
                                 +91 86373 82771 <br />
                                 +91 80015 03977
@@ -73,19 +80,22 @@ const D_ContactUs = () => {
 
 
                         {/* the form */}
-                        <Form/>
+                        <Form />
 
 
 
 
                     </div>
-                        {/* the footer */}
-                        <D_ContactUsFooter/>
+
 
 
 
 
                 </div>
+
+
+                {/* the footer */}
+                <D_ContactUsFooter contactUsButton={false} />
             </div>
         </motion.div>
     );

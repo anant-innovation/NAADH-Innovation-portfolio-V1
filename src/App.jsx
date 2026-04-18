@@ -21,7 +21,7 @@ function App() {
     const timer = setTimeout(() => {
 
       window.scrollTo(0, 0)
-    }, 400)
+    }, 450)
 
     return () => clearTimeout(timer);
 

@@ -4,7 +4,7 @@ import Button from "./Button";
 import Divider from "./Divider";
 
 
-const D_ContactUsFooter = () => {
+const D_ContactUsFooter = ({contactUsButton = true}) => {
 
 
 
@@ -83,12 +83,13 @@ const D_ContactUsFooter = () => {
 
 
                         {/* contact us button */}
-                        <Button classname={"mb-[30px]"} solid={true} text={"Contact Us"} />
+                        {contactUsButton && <Button classname={"mb-[30px]"} solid={true} text={"Contact Us"} />}
+                        
 
                         {/* phone number and email */}
+                        <p className=" mb-[10px]">contact@naadhinnovation.com</p>
                         <p>+91 86373 82771</p>
-                        <p className=" mb-[10px]">+91 80015 03977</p>
-                        <p>contact@naadhinnovation.com</p>
+                        <p>+91 80015 03977</p>
                     </div>
                 </div>
 

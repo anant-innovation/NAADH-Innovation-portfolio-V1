@@ -24,7 +24,12 @@ const D_Workshop = () => {
 
 
     return (
-        <motion.div className=" switchDesktop">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+            className=" switchDesktop">
 
             {/* biggest container */}
             <div className=" w-full flex flex-col items-center">
@@ -119,7 +124,9 @@ const D_Workshop = () => {
 
 
                         {/* paragraph */}
-                        <Text className={"mb-[60px]"}>Students don’t just listen they actively build, test, and explore. <br /> Our workshops are designed to give them real experience with components, tools, and systems in a way that feels natural and engaging.</Text>
+                        <Text className={"mb-[60px]"}>
+                            <OrangeHighlighter>Students don’t just listen they actively build, test, and explore.</OrangeHighlighter>
+                             <br /> Our workshops are designed to give them real experience with components, tools, and systems in a way that feels natural and engaging.</Text>
 
 
 
@@ -215,8 +222,8 @@ const D_Workshop = () => {
 
 
                 </div>
-                    {/* conatact us footer */}
-                    <D_ContactUsFooter/>
+                {/* conatact us footer */}
+                <D_ContactUsFooter />
             </div>
         </motion.div>
     );
