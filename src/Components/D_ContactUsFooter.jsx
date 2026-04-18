@@ -20,7 +20,7 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
              h-[350px]
              
 
-             lg:w-[55rem]
+             lg:w-[60rem]
              xl:w-[66rem]
              2xl:w-[76rem]">
 
@@ -29,7 +29,7 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
                 {/* container 1 */}
                 <div className=" w-full flex justify-between mb-[20px]">
-                    <div className=" mr-[20px]">
+                    <div className=" xl:mr-[20px]">
 
                         {/* secondary page heading style */}
                         <div className=" mb-[30px]">
@@ -58,10 +58,15 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
                     {/* container 2 */}
-                    <div>
+                    <div className="
+                    
+                    ">
 
 
-                        <h1 className=" text-white text-xl mb-[5px]">Socials</h1>
+                        <h1 className=" text-white 
+                        
+                        text-xl 
+                         mb-[5px]">Socials</h1>
                         <p className=" mb-[2px]">Instagram</p>
                         <p>Linkedin</p>
                     </div>
@@ -70,15 +75,20 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
                     {/* container 3 */}
-                    <div>
+                    <div className="
+                    
+                    ">
                         <h1 className=" text-white text-xl mb-[5px]">Careers</h1>
                     </div>
 
 
 
                     {/* container 4 */}
-                    <div>
-                        <h1 className=" text-white text-xl mb-[5px]">Privacy Policy</h1>
+                    <div className="
+                    
+                    ">
+                        <h1 className=" text-white text-xl mb-[5px]
+                        lg:ml-[5px]">Privacy Policy</h1>
                     </div>
 
 
@@ -105,7 +115,11 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
                 {/* the line */}
-                <div className=" w-[115%] border border-white20" />
+                <div className=" w-[115%] border border-white10
+                
+                lg:hidden
+                xl:block
+                " />
 
 
 
@@ -122,9 +136,6 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
                     src={naadhBackgrounImage}
                     className="  absolute -z-10
                 
-                
-                xl:text-[300px]
-                2xl:text-[400px]
 
                 "/>
 

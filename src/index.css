@@ -307,3 +307,24 @@ body {
             display: flex;
       }
 }
+
+
+
+
+.naadhArchives{
+      font-size: 30px;
+}
+
+@media (max-width:1536px){
+
+      .naadhArchives{
+            font-size: 36px;
+      }
+}
+
+@media (min-width:1536px){
+
+      .naadhArchives{
+            font-size: 48px;
+      }
+}

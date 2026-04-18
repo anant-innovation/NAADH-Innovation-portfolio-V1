@@ -63,7 +63,9 @@ const D_Gallery = () => {
                 <div className=" flex flex-col items-center
                 
                 
-                w-[76rem]">
+                lg:w-[58rem]
+                xl:w-[66rem]
+                2xl:w-[76rem]">
 
 
 
@@ -71,6 +73,7 @@ const D_Gallery = () => {
                     <DesktopSecondaryHeroSections bulletpointText={"ARCHIVES V1.0 | 21.03.2026"}
 
                         heading={"NAADH Innovation Archive"}
+                        headingClassName={" naadhArchives"}
                         subText={"National Aerospace Agriculture Defence & Hospitality"}
                         paragraphText={"Captured moments from live workshops, showcasing real-time fabrication, testing, and applied learning environments."}
                     />
@@ -228,7 +231,9 @@ const D_Gallery = () => {
                     </div>
 
 
-                    <Divider mb={"200px"} />
+                    <div className=" w-screen flex justify-center">
+                        <Divider mb={"200px"} />
+                    </div>
 
 
 
