@@ -18,6 +18,7 @@ import Heading2 from "@/Components/Heading2";
 import ContactUsFooter from "@/Components/ContactUsFooter";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react"
+import { ChevronDown } from "lucide-react";
 
 
 const M_Home = () => {
@@ -57,7 +58,12 @@ const M_Home = () => {
 
 
                     {/* BIG HEADING " NAADH INNOVATION ENGINEERING THE FUTURE OF INDIAN FLIGHT" */}
-                    <div className=" text-white text-4xl flex flex-col items-center font-extrabold tracking-[-4%] mb-[30px]">
+                    <div className=" text-white flex flex-col items-center font-extrabold mb-[30px]
+                    
+                    xs1:text-[26px] xs1:leading-[30px]
+                    xs1-1:text-[28px]
+                    xs2:text-4xl xs2:tracking-[-4%] xs2:leading-[38px]
+                    ">
                         <h1>NAADH Innovation:</h1>
                         <h1>Engineering the <span className=" text-orange">Future</span></h1>
                         <h1>of Indian Flight</h1>
@@ -73,7 +79,16 @@ const M_Home = () => {
 
 
                 {/* SMALL TEXT IN THE BOTTOM */}
-                <p className=" absolute bottom-[1rem] px-[2rem] text-sm">Developing next-generation drone systems while training the next generation of engineers through hands-on workshops and STEM labs.</p>
+                <p className=" absolute bottom-[1rem] 
+                xs1:hidden
+                
+                
+                text-sm">Developing next-generation drone systems while training the next generation of engineers through hands-on workshops and STEM labs.</p>
+
+
+                <div className=" w-full absolute bottom-[2rem] left-0 flex justify-center">
+                <ChevronDown/>
+                </div>
 
             </div>
 
@@ -323,7 +338,7 @@ const M_Home = () => {
 
                 {/* bullet */}
                 <div className=" flex justify-start mb-[40px]">
-                    <BulletPoint sm={"true"} text={"WE WILL LET THE PICTURES DO THE TALKING"} />
+                    <BulletPoint sm={"true"} text={"VISUALS SPEAK LOUDER"} />
                 </div>
 
 

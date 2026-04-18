@@ -10,7 +10,9 @@ const ContactUsFooter = ({ button }) => {
 
 
     return (
-        <div className=' flex flex-col relative overflow-hidden'>
+        <div className=' flex flex-col relative overflow-hidden
+        
+        max-w-[420px]'>
 
             <div className=' flex flex-col justify-start mb-[30px]'>
 
@@ -32,12 +34,12 @@ const ContactUsFooter = ({ button }) => {
 
 
 
-            <div className=' flex mb-[30px]'>
+            <div className=' flex flex-col mb-[10px] '>
 
 
 
                 {/* the left side */}
-                <div className=' border-r border-white20 pr-[20px]'>
+                <div className='border-b border-white10'>
 
                     {/* the copyright stuff */}
                     <p className=' mb-[15px]'>© 2026 NAADH INNOVATION. <br />
@@ -56,11 +58,39 @@ const ContactUsFooter = ({ button }) => {
                     </div>
 
                     {/* phone number and email */}
-                    <div>
+                    <div className=' mb-[30px]'>
                         <p>+91 80015 03977</p>
                         <p>+91 86373 82771</p>
                         <p>contact@naadhinnovation.com</p>
                     </div>
+
+
+
+
+                    {
+                        button ? (
+                            <div className=' mb-[20px] flex justify-between'>
+
+                                <Button link={"/contactus"} solid={"true"} text={"Contact Us"} />
+
+                                <div className=' flex justify-between'>
+
+                                    {/* linkedin */}
+                                    <a  href="">
+                                        <FaLinkedin className='w-[30px] h-[30px]' />
+                                    </a>
+
+                                    {/* twitter */}
+                                    <a className='ml-[10px]' href="">
+                                        <BsTwitterX className='w-[30px] h-[30px]' />
+                                    </a>
+                                </div>
+                            </div>
+                        ) : null
+
+
+
+                    }
                 </div>
 
 
@@ -69,52 +99,21 @@ const ContactUsFooter = ({ button }) => {
 
 
                 {/* the right side */}
-                <div className=' text-sm pl-[10px]'>
-
-
-                    {/* socials */}
-                    <div className=' mb-[10px]'>
-                        <p className=' text-white mb-[3px]'>Socials</p>
-
-                        <div className=' flex'>
-
-                            {/* linkedin */}
-                            <a href="">
-                                <FaLinkedin className='w-[30px] h-[30px]' />
-                            </a>
-
-                            {/* twitter */}
-                            <a href="">
-                                <BsTwitterX className='w-[30px] h-[30px]' />
-                            </a>
-                        </div>
-
-                    </div>
+                <div className=' w-full flex justify-center text-sm pt-[10px]'>
 
 
                     {/* privacy policy */}
-                    <a href="" className=' text-white underline'>Privacy Policy</a>
-                    <br />
-                    {/* careers */}
-                    <a href="" className=' text-white underline'>Careers</a>
+                    <div className=' flex w-full justify-end'>
+                        <a href="" className=' text-white mr-[30px]'>Privacy Policy</a>
+                        <br />
+                        {/* careers */}
+                        <a href="" className=' text-white'>Careers</a>
+                    </div>
 
 
                 </div>
             </div>
 
-
-
-
-            {
-                button ? (
-                    <div className=' mb-[30px]'>
-                        <Button link={"/contactus"} solid={"true"} text={"Contact Us"} />
-                    </div>
-                ) : null
-
-
-
-            }
 
 
 

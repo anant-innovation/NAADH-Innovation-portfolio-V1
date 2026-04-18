@@ -556,6 +556,7 @@ const D_Home = () => {
                             {/* the bullet  */}
                             <div className=" flex justify-between">
                                 <Button link={"/gallery"} classname={" mt-[30px]"} outline={true} text={"Visit Gallery"} />
+                                
                                 <div>
                                     <BulletPoint sm={true} text={"WE WILL LET THE PICTURES DO THE TALKING"} />
                                 </div>

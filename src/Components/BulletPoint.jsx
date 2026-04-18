@@ -23,7 +23,11 @@ const BulletPoint = ({text, sm, className}) => {
             <div className="custom-cursor bg-orange w-[8px] h-[8px] mr-2"></div>
 
             {/* TEXT */}
-            <p className="custom-cursor text-white80 text-sm tracking-[14%]">{text}</p>
+            <p className="custom-cursor text-white80 tracking-[14%]
+            
+            xs1:text-[11px]
+            sm:text-sm
+            ">{text}</p>
         </div>
     );
 }
