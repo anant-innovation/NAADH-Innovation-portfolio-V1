@@ -4,7 +4,7 @@ import Text from "./Text";
 import Divider from "./Divider";
 
 
-const DesktopSecondaryHeroSections = ({bulletpointText, heading, subText, paragraphText}) => {
+const DesktopSecondaryHeroSections = ({ bulletpointText, heading, subText, paragraphText }) => {
 
 
     return (
@@ -14,7 +14,7 @@ const DesktopSecondaryHeroSections = ({bulletpointText, heading, subText, paragr
             <div className=" flex justify-between w-full h-[250px]  mb-[60px]">
 
                 <div className=" ">
-                    
+
                     <BulletPoint text={bulletpointText} className={" mb-[20px]"} sm={true} />
 
                     <SecondaryPageHeroHeading heading={heading} subText={subText} />
@@ -26,7 +26,9 @@ const DesktopSecondaryHeroSections = ({bulletpointText, heading, subText, paragr
 
 
             </div>
-            <Divider />
+            <div className=" w-[98vw] flex justify-center">
+                <Divider />
+            </div>
         </div>
     );
 }

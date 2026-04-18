@@ -41,7 +41,9 @@ const D_Workshop = () => {
                 <div className=" flex flex-col items-center
                 
                 
-                w-[76rem]">
+                lg:w-[58rem]
+                xl:w-[66rem]
+                2xl:w-[76rem]">
 
 
 
@@ -126,7 +128,7 @@ const D_Workshop = () => {
                         {/* paragraph */}
                         <Text className={"mb-[60px]"}>
                             <OrangeHighlighter>Students don’t just listen they actively build, test, and explore.</OrangeHighlighter>
-                             <br /> Our workshops are designed to give them real experience with components, tools, and systems in a way that feels natural and engaging.</Text>
+                            <br /> Our workshops are designed to give them real experience with components, tools, and systems in a way that feels natural and engaging.</Text>
 
 
 
