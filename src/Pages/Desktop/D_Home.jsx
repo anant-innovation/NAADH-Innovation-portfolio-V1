@@ -568,7 +568,7 @@ const D_Home = () => {
 
 
                     {/* the footer with contact us button section */}
-                    {/* <D_ContactUsFooter /> */}
+                    <D_ContactUsFooter />
                 </div>
             </div>
 

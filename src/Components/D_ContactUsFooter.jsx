@@ -2,9 +2,10 @@ import { MapPin } from "lucide-react";
 import SecondaryPageHeroHeading from "./SecondaryPageHeroHeading";
 import Button from "./Button";
 import Divider from "./Divider";
+import naadhBackgrounImage from "@/assets/Desktop/Contact Us/NAADH.svg"
 
 
-const D_ContactUsFooter = ({contactUsButton = true}) => {
+const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
 
@@ -14,9 +15,14 @@ const D_ContactUsFooter = ({contactUsButton = true}) => {
 
 
             {/* container */}
-            <div className=" w-[76rem] flex flex-col items-center relative z-0
+            <div className="  flex flex-col items-center relative z-0
             
-             h-[350px]">
+             h-[350px]
+             
+
+             lg:w-[55rem]
+             xl:w-[66rem]
+             2xl:w-[76rem]">
 
 
 
@@ -84,7 +90,7 @@ const D_ContactUsFooter = ({contactUsButton = true}) => {
 
                         {/* contact us button */}
                         {contactUsButton && <Button link={"/contactus"} classname={"mb-[30px]"} solid={true} text={"Contact Us"} />}
-                        
+
 
                         {/* phone number and email */}
                         <p className=" mb-[10px]">contact@naadhinnovation.com</p>
@@ -99,14 +105,30 @@ const D_ContactUsFooter = ({contactUsButton = true}) => {
 
 
                 {/* the line */}
-                <div className=" w-[120%] border border-white20" />
+                <div className=" w-[115%] border border-white20" />
 
 
 
 
 
                 {/* the big NAADH LOGO */}
-                <div className=" text-[400px] absolute font-black tracking-[-9%] text-white5  bottom-[120px] left-[-40px] -z-10">NAADH</div>
+                <div className=" relative w-full 
+                
+                lg:bottom-[120px]
+                xl:bottom-[140px]
+                2xl:bottom-[150px]">
+                    <img
+                    
+                    src={naadhBackgrounImage}
+                    className="  absolute -z-10
+                
+                
+                xl:text-[300px]
+                2xl:text-[400px]
+
+                "/>
+
+                </div>
 
 
             </div>
