@@ -98,7 +98,8 @@ const MobileTabNavbar = () => {
         <div className=" w-[100%] h-[4rem] bg-background flex items-center justify-between p-[10px] border-b border-white10 
          sticky top-0 z-50
          
-         
+         xs2:px-[20px]
+         sm:px-[30px]
          switchMobileNavbar">
 
 
