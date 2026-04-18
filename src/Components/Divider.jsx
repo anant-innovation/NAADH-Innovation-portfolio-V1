@@ -8,6 +8,7 @@ const Divider = ({mb , className}) => {
             
             lg:w-[90%]
             2xl:w-[80%]
+            3xl:w-full
             ${className}`}></div>
     );
 }

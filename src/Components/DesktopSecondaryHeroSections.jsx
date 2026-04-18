@@ -26,7 +26,10 @@ const DesktopSecondaryHeroSections = ({ bulletpointText, heading, subText, parag
 
 
             </div>
-            <div className=" w-[98vw] flex justify-center">
+            <div className=" lg:w-[98vw]
+            3xl:w-[130%]
+
+            flex justify-center">
                 <Divider />
             </div>
         </div>
