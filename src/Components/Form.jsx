@@ -59,7 +59,7 @@ const formSchema = z.object({
 
 
 
-const Form = () => {
+const Form = ({className}) => {
 
 
     const form = useForm({
@@ -96,7 +96,7 @@ const Form = () => {
 
 
     return (
-        <Card className={" lg:w-[400px] xl:w-[500px] dark"}>
+        <Card className={` lg:w-[400px] xl:w-[500px] dark ${className}`}>
 
 
             <CardHeader>
