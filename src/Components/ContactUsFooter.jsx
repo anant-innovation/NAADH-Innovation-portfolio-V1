@@ -12,7 +12,8 @@ const ContactUsFooter = ({ button }) => {
     return (
         <div className=' flex flex-col relative overflow-hidden
         
-        max-w-[420px]'>
+        w-full
+        max-w-[400px]'>
 
             <div className=' flex flex-col justify-start mb-[30px]'>
 
