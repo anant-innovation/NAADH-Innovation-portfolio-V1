@@ -43,118 +43,135 @@ const M_Gallery = () => {
             className=" flex flex-col justify-center px-[10px] switchMobile">
 
 
-            {/* bullet */}
-            <div className=" flex justify-start my-[30px] ">
-                <BulletPoint text={"ARCHIVES V1.0 | 21.03.26"} />
+            {/* for responsiveness */}
+            <div className=" w-full flex justify-center">
+
+
+                <div className=" flex flex-col items-center
+                
+                
+            xs2:w-[400px]
+            sm:w-[500px]">
+
+
+
+
+
+
+
+                    {/* bullet */}
+                    <div className=" w-full flex justify-start my-[30px] ">
+                        <BulletPoint text={"ARCHIVES V1.0 | 21.03.26"} />
+                    </div>
+
+
+                    {/* secondaryHeroHeading */}
+                    <div className=" w-full mb-[30px]">
+                        <SecondaryPageHeroHeading heading={"NAADH Innovation Archive"} subText={"National Aerospace Agriculture Defence & Hospitality"} />
+                    </div>
+
+
+                    {/* paragraph */}
+                    <p className=" mb-[30px]">Captured moments from live workshops, showcasing real-time fabrication, testing, and applied learning environments.
+                    </p>
+
+
+                    {/* divider */}
+                    <Divider mb={"30px"} />
+
+
+                    {/* images 18pc */}
+                    <img className=" mb-[10px]" src={mobileGalleryImage1} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage2} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage3} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage4} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage5} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage6} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage7} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage8} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage9} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage10} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage11} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage12} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage13} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage14} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage15} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage16} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage17} alt="" />
+                    <img className=" mb-[40px]" src={mobileGalleryImage18} alt="" />
+
+
+
+                    {/* divider */}
+                    <Divider mb={"60px"} />
+
+
+                    {/* bring this to your Institution heading */}
+                    <h1 className=" w-full text-2xl text-white font-extrabold mb-[20px]">Bring This To Your Institution</h1>
+
+
+                    {/* bring this to your institute paragraph */}
+                    <p className=" mb-[30px]">These are just a few moments from our sessions.If you’d like to organize something similar for your students, take a look at our workshops.</p>
+
+
+                    {/* workshop button */}
+                    <div className=" w-full flex justify-end mb-[100px]">
+                        <Button link={"/workshop"} outline={true} text={"Workshops"} />
+                    </div>
+
+
+                    {/* the people behind NAADH Innovation */}
+                    <Heading2 classname={"w-full"} text={"The people behind NAADH Innovation"} />
+
+
+                    {/* the people behind NAADH Innovation paragraph */}
+                    <p className=" mb-[60px]">Built through consistent effort, learning, and a genuine interest in how things work.What started as curiosity has grown into a focused pursuit of building real systems and meaningful experiences.</p>
+
+
+                    {/* founder image */}
+                    <img className=" mb-[10px] sm:mb-[20px]" src={mobileFounder} alt="" />
+
+
+                    {/* founder bullet */}
+                    <div className="w-full flex justify-end ">
+                        <BulletPoint text={"FOUNDER"} />
+                    </div>
+
+
+                    {/* Founder Info */}
+                    <div className="w-full text-lg leading-[20px] mb-[60px]">
+                        <p>Aryabhatta Ghosh</p>
+                        <p>Chief Technical Officer (CTO)</p>
+                    </div>
+
+
+                    {/* Cofounder Image */}
+                    <img className=" mb-[10px] sm:mb-[20px]" src={mobileCoFounder} alt="" />
+
+
+
+                    {/* co founder bullet */}
+                    <div className="flex justify-end w-full">
+                        <BulletPoint text={"CO FOUNDER"} />
+                    </div>
+
+
+                    {/* co founder info */}
+                    <div className=" w-full text-lg leading-[20px] mb-[100px]">
+                        <p>Sudhanshu Gupta</p>
+                        <p>Chief Executive Officer (CEO)</p>
+                        <p>Director</p>
+                    </div>
+
+
+
+                    {/* contact us footer */}
+                    <div className=" w-full">
+                        <ContactUsFooter button={true} />
+                    </div>
+
+                </div>
             </div>
-
-
-            {/* secondaryHeroHeading */}
-            <div className=" mb-[30px]">
-                <SecondaryPageHeroHeading heading={"NAADH Innovation Archive"} subText={"National Aerospace Agriculture Defence & Hospitality"} />
-            </div>
-
-
-            {/* paragraph */}
-            <p className=" mb-[30px]">Captured moments from live workshops, showcasing real-time fabrication, testing, and applied learning environments.
-            </p>
-
-
-            {/* divider */}
-            <Divider mb={"30px"} />
-
-
-            {/* images 18pc */}
-            <img className=" mb-[10px]" src={mobileGalleryImage1} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage2} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage3} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage4} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage5} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage6} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage7} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage8} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage9} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage10} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage11} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage12} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage13} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage14} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage15} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage16} alt="" />
-            <img className=" mb-[10px]" src={mobileGalleryImage17} alt="" />
-            <img className=" mb-[40px]" src={mobileGalleryImage18} alt="" />
-
-
-
-            {/* divider */}
-            <Divider mb={"60px"} />
-
-
-            {/* bring this to your Institution heading */}
-            <h1 className=" text-2xl text-white font-extrabold mb-[20px]">Bring This To Your Institution</h1>
-
-
-            {/* bring this to your institute paragraph */}
-            <p className=" mb-[30px]">These are just a few moments from our sessions.If you’d like to organize something similar for your students, take a look at our workshops.</p>
-
-
-            {/* workshop button */}
-            <div className=" flex justify-end mb-[100px]">
-                <Button link={"/workshop"} outline={true} text={"Workshops"} />
-            </div>
-
-
-            {/* the people behind NAADH Innovation */}
-            <Heading2 text={"The people behind NAADH Innovation"} />
-
-
-            {/* the people behind NAADH Innovation paragraph */}
-            <p className=" mb-[60px]">Built through consistent effort, learning, and a genuine interest in how things work.What started as curiosity has grown into a focused pursuit of building real systems and meaningful experiences.</p>
-
-
-            {/* founder image */}
-            <img className=" mb-[10px]" src={mobileFounder} alt="" />
-
-
-            {/* founder bullet */}
-            <div className=" flex justify-end ">
-                <BulletPoint text={"FOUNDER"} />
-            </div>
-
-
-            {/* Founder Info */}
-            <div className=" text-lg leading-[20px] mb-[60px]">
-                <p>Aryabhatta Ghosh</p>
-                <p>Chief Technical Officer (CTO)</p>
-            </div>
-
-
-            {/* Cofounder Image */}
-            <img className=" mb-[10px]" src={mobileCoFounder} alt="" />
-
-
-
-            {/* co founder bullet */}
-            <div className="flex justify-end">
-                <BulletPoint text={"CO FOUNDER"} />
-            </div>
-
-
-            {/* co founder info */}
-            <div className=" text-lg leading-[20px] mb-[100px]">
-                <p>Sudhanshu Gupta</p>
-                <p>Chief Executive Officer (CEO)</p>
-                <p>Director</p>
-            </div>
-
-
-
-            {/* contact us footer */}
-            <div>
-                <ContactUsFooter button={true} />
-            </div>
-
-
 
         </motion.div>
     );
