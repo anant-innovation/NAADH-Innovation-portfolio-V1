@@ -254,6 +254,7 @@ body {
       --breakpoint-xs1: 300px;
       --breakpoint-xs1-1: 330px;
       --breakpoint-xs2: 400px;
+      --breakpoint-xs3: 500px;
       --breakpoint-lg-1: 1160px;
       --breakpoint-r1700: 1700px;
       --breakpoint-3xl: 1920px;

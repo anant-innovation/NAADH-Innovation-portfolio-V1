@@ -51,12 +51,7 @@ const M_Home = () => {
                 {/* ******************************************* */}
                 {/* HERO SECTION */}
                 <div className=" w-screen h-[92svh] bg-background grid-bg flex flex-col justify-center items-center px-[10px] relative
-            mb-[100px]
-
-
-
-            
-            ">
+            mb-[100px]">
 
 
                     <div className=" flex flex-col justify-center items-center">
@@ -72,6 +67,7 @@ const M_Home = () => {
                     xs1:text-[26px] xs1:leading-[30px]
                     xs1-1:text-[28px]
                     xs2:text-4xl xs2:tracking-[-4%] xs2:leading-[38px]
+                    sm:text-5xl sm:leading-[52px]
                     ">
                             <h1>NAADH Innovation:</h1>
                             <h1>Engineering the <span className=" text-orange">Future</span></h1>
@@ -87,12 +83,7 @@ const M_Home = () => {
 
 
 
-                    {/* SMALL TEXT IN THE BOTTOM */}
-                    <p className=" absolute bottom-[1rem] 
-                xs1:hidden
-                
-                
-                text-sm">Developing next-generation drone systems while training the next generation of engineers through hands-on workshops and STEM labs.</p>
+                    
 
 
                     <div className=" w-full absolute bottom-[2rem] left-0 flex justify-center">
