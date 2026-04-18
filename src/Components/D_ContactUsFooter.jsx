@@ -2,9 +2,10 @@ import { MapPin } from "lucide-react";
 import SecondaryPageHeroHeading from "./SecondaryPageHeroHeading";
 import Button from "./Button";
 import Divider from "./Divider";
+import naadhBackgrounImage from "@/assets/Desktop/Contact Us/NAADH.svg"
 
 
-const D_ContactUsFooter = () => {
+const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
 
 
@@ -14,16 +15,21 @@ const D_ContactUsFooter = () => {
 
 
             {/* container */}
-            <div className=" w-[76rem] flex flex-col items-center relative z-0
+            <div className="  flex flex-col items-center relative z-0
             
-             h-[350px]">
+             h-[350px]
+             
+
+             lg:w-[60rem]
+             xl:w-[66rem]
+             2xl:w-[76rem]">
 
 
 
 
                 {/* container 1 */}
                 <div className=" w-full flex justify-between mb-[20px]">
-                    <div className=" mr-[20px]">
+                    <div className=" xl:mr-[20px]">
 
                         {/* secondary page heading style */}
                         <div className=" mb-[30px]">
@@ -52,10 +58,14 @@ const D_ContactUsFooter = () => {
 
 
                     {/* container 2 */}
-                    <div>
+                    <div className=" 
+                    ">
 
 
-                        <h1 className=" text-white text-xl mb-[5px]">Socials</h1>
+                        <h1 className=" text-white 
+                        
+                        text-xl 
+                         mb-[5px]">Socials</h1>
                         <p className=" mb-[2px]">Instagram</p>
                         <p>Linkedin</p>
                     </div>
@@ -64,15 +74,18 @@ const D_ContactUsFooter = () => {
 
 
                     {/* container 3 */}
-                    <div>
+                    <div className="
+                    ">
                         <h1 className=" text-white text-xl mb-[5px]">Careers</h1>
                     </div>
 
 
 
                     {/* container 4 */}
-                    <div>
-                        <h1 className=" text-white text-xl mb-[5px]">Privacy Policy</h1>
+                    <div className="
+                    ">
+                        <h1 className=" text-white text-xl mb-[5px]
+                        ">Privacy Policy</h1>
                     </div>
 
 
@@ -83,12 +96,15 @@ const D_ContactUsFooter = () => {
 
 
                         {/* contact us button */}
-                        <Button classname={"mb-[30px]"} solid={true} text={"Contact Us"} />
+                        {contactUsButton ? <Button link={"/contactus"} classname={"mb-[30px]"} solid={true} text={"Contact Us"} /> :
+
+                        <div className=" w-[30px] h-[60px]" />}
+
 
                         {/* phone number and email */}
+                        <p className=" mb-[10px] absolute bottom-[200px]  right-0">contact@naadhinnovation.com</p>
                         <p>+91 86373 82771</p>
-                        <p className=" mb-[10px]">+91 80015 03977</p>
-                        <p>contact@naadhinnovation.com</p>
+                        <p>+91 80015 03977</p>
                     </div>
                 </div>
 
@@ -98,14 +114,31 @@ const D_ContactUsFooter = () => {
 
 
                 {/* the line */}
-                <div className=" w-[120%] border border-white20" />
+                <div className=" w-[115%] border border-white10
+                
+                lg:hidden
+                xl:block
+                " />
 
 
 
 
 
                 {/* the big NAADH LOGO */}
-                <div className=" text-[400px] absolute font-black tracking-[-9%] text-white5  bottom-[120px] left-[-40px] -z-10">NAADH</div>
+                <div className=" relative w-full 
+                
+                lg:bottom-[120px]
+                xl:bottom-[140px]
+                2xl:bottom-[150px]">
+                    <img
+                    
+                    src={naadhBackgrounImage}
+                    className="  absolute -z-10
+                
+
+                "/>
+
+                </div>
 
 
             </div>

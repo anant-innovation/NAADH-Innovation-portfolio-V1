@@ -6,7 +6,13 @@ const Button = ({ link, text, classname, outline, solid }) => {
 
 
         return (
-            <Link to={link}><button className={`bg-background border border-white20 px-4 py-1 text-white text-lg rounded-xs ${classname}`}>{text}</button>
+            <Link to={link}><button className={`bg-background border border-white20 px-4 py-1 text-white text-lg rounded-xs 
+            
+              custom-cursor
+
+              hover:bg-white hover:text-black
+
+            ${classname}`}>{text}</button>
             </Link>
         );
     }
@@ -17,7 +23,13 @@ const Button = ({ link, text, classname, outline, solid }) => {
 
 
         return (
-            <Link to={link}><button className={`bg-orange px-4 py-1 text-white text-lg rounded-xs ${classname}`}>{text}</button>
+            <Link to={link}><button className={`bg-orange px-4 py-1 text-white text-lg rounded-xs 
+            
+            custom-cursor
+
+             hover:bg-bright-orange
+            
+            ${classname}`}>{text}</button>
             </Link>
         );
     }

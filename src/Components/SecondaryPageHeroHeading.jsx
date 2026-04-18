@@ -1,15 +1,14 @@
 
 
-const SecondaryPageHeroHeading = ({heading, subText, className}) => {
+const SecondaryPageHeroHeading = ({heading, subText, className, headingClassName}) => {
 
 
     return(
         <div className={`${className}`}>
-            <h1 className=" text-[28px] text-white font-extrabold leading-[30px]
+            <h1 className= {`text-[28px] text-white font-extrabold leading-[30px]
             
-            
-             3xl:text-[48px] 3xl:leading-[40px]
-            ">{heading}</h1>
+            lg:text-[48px] lg:leading-[45px]  ${headingClassName}`}
+            >{heading}</h1>
             <p className=" text-xs 
             
             

@@ -4,10 +4,11 @@ const Divider = ({mb , className}) => {
 
 
     return(
-        <div className={`w-[100%] border border-white10 mb-[${mb}] 
+        <div className={`w-full border border-white10 mb-[${mb}] 
             
-
-            3xl:w-[140%]
+            lg:w-[90%]
+            2xl:w-[80%]
+            3xl:w-full
             ${className}`}></div>
     );
 }
