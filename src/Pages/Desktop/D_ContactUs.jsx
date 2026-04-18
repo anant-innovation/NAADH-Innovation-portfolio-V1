@@ -21,15 +21,26 @@ const D_ContactUs = () => {
             transition={{ duration: 0.5 }}
             className=" switchDesktop">
 
-            {/* the big container */}
-            <div className="w-full flex flex-col items-center">
+
+            <div className=" flex justify-center bg-background-level2">
 
 
-                <Toaster theme="dark" />
+                {/* the big container */}
+                <div className="w-full flex flex-col items-center
+            
+            
+            bg-background
+            max-w-[1920px]">
 
 
-                {/* the container */}
-                <div className=" flex flex-col items-center
+                    <Toaster theme="dark" />
+
+
+
+
+
+                    {/* the container */}
+                    <div className=" flex flex-col items-center
                 
                 
                 lg:w-[58rem]
@@ -39,50 +50,56 @@ const D_ContactUs = () => {
 
 
 
-                    {/* the hero section */}
-                    <DesktopSecondaryHeroSections
-                        bulletpointText={"CONTACT V1.0"}
-                        heading={"Contact Us"}
-                        subText={"Connect with us to discuss your requirements, scheduling, or any queries."}
-                        paragraphText={"Dedicated channel for coordinating workshops, discussing requirements, and planning sessions with institutions."}
-                    />
+                        {/* the hero section */}
+                        <DesktopSecondaryHeroSections
+                            bulletpointText={"CONTACT V1.0"}
+                            heading={"Contact Us"}
+                            subText={"Connect with us to discuss your requirements, scheduling, or any queries."}
+                            paragraphText={"Dedicated channel for coordinating workshops, discussing requirements, and planning sessions with institutions."}
+                        />
 
 
 
 
 
 
-                    {/* the container for the form and the left text */}
-                    <div className="w-full flex justify-between mb-[200px]">
+                        {/* the container for the form and the left text */}
+                        <div className="w-full flex justify-between mb-[200px]">
 
 
 
 
-                        {/* the text */}
-                        <div>
-                            <SecondaryPageHeroHeading
-                                heading={"NAADH Innovation"}
-                                subText={"National Aerospace Agriculture Defence & Hospitality"}
-                                className={"mb-[30px]"}
-                            />
+                            {/* the text */}
+                            <div>
+                                <SecondaryPageHeroHeading
+                                    heading={"NAADH Innovation"}
+                                    subText={"National Aerospace Agriculture Defence & Hospitality"}
+                                    className={"mb-[30px]"}
+                                />
 
 
-                            <Text>
-                                <OrangeHighlighter>We are just a call away</OrangeHighlighter>
-                                <br /><br />
-                                +91 86373 82771 <br />
-                                +91 80015 03977
-                                <br /><br />
-                                contact@naadhinnovation.com
-                            </Text>
+                                <Text>
+                                    <OrangeHighlighter>We are just a call away</OrangeHighlighter>
+                                    <br /><br />
+                                    +91 86373 82771 <br />
+                                    +91 80015 03977
+                                    <br /><br />
+                                    contact@naadhinnovation.com
+                                </Text>
+                            </div>
+
+
+
+
+
+                            {/* the form */}
+                            <Form />
+
+
+
+
                         </div>
 
-
-
-
-
-                        {/* the form */}
-                        <Form />
 
 
 
@@ -90,14 +107,9 @@ const D_ContactUs = () => {
                     </div>
 
 
-
-
-
+                    {/* the footer */}
+                    <D_ContactUsFooter contactUsButton={false} />
                 </div>
-
-
-                {/* the footer */}
-                <D_ContactUsFooter contactUsButton={false} />
             </div>
         </motion.div>
     );
