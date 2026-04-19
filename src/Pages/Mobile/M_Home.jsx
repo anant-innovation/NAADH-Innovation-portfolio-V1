@@ -122,7 +122,7 @@ const M_Home = () => {
 
 
                     {/* image */}
-                    <img className=" mb-[30px]"
+                    <img loading="lazy" className=" mb-[30px]"
                         src={mobileWhatDoWeDoSection} alt="" />
 
 
@@ -167,13 +167,13 @@ const M_Home = () => {
                     {/* image 1 */}
 
                     <div className="sm:hidden">
-                        <img className=" mb-[10px]" src={mobileDroneDevelopmentSectionImg1} alt="" />
+                        <img loading="lazy" className=" mb-[10px]" src={mobileDroneDevelopmentSectionImg1} alt="" />
 
                         {/* image 2 */}
-                        <img className=" mb-[10px]" src={mobileDroneDevelopmentSectionImg2} alt="" />
+                        <img loading="lazy" className=" mb-[10px]" src={mobileDroneDevelopmentSectionImg2} alt="" />
 
                         {/* image 3 */}
-                        <img className=" mb-[30px]" src={mobileDroneDevelopmentSectionImg3} alt="" />
+                        <img loading="lazy" className=" mb-[30px]" src={mobileDroneDevelopmentSectionImg3} alt="" />
                     </div>
 
 
@@ -255,7 +255,7 @@ const M_Home = () => {
 
 
                     {/* images */}
-                    <img className=" mb-[30px]" src={mobileWorkshopSectionImage} alt="" />
+                    <img loading="lazy" className=" mb-[30px]" src={mobileWorkshopSectionImage} alt="" />
 
                     {/* bullet */}
                     <div className=" flex justify-end">
@@ -309,7 +309,7 @@ const M_Home = () => {
 
 
                     {/* image */}
-                    <img className=" mb-[30px]" src={mobileHomeImage6} alt="" />
+                    <img loading="lazy" className=" mb-[30px]" src={mobileHomeImage6} alt="" />
 
 
                     {/* bullet point */}
@@ -329,7 +329,7 @@ const M_Home = () => {
 
 
                     {/* image */}
-                    <img className=" mb-[30px]" src={mobileHomeImage7} alt="" />
+                    <img loading="lazy" className=" mb-[30px]" src={mobileHomeImage7} alt="" />
 
 
                     {/* bullet point */}
@@ -377,10 +377,10 @@ const M_Home = () => {
 
                     {/* images 8 to 11 */}
                     <div className=" sm:hidden">
-                        <img className=" mb-[10px]" src={mobileHomeImage8} alt="" />
-                        <img className=" mb-[10px]" src={mobileHomeImage9} alt="" />
-                        <img className=" mb-[10px]" src={mobileHomeImage10} alt="" />
-                        <img className=" mb-[20px]" src={mobileHomeImage11} alt="" />
+                        <img loading="lazy" className=" mb-[10px]" src={mobileHomeImage8} alt="" />
+                        <img loading="lazy" className=" mb-[10px]" src={mobileHomeImage9} alt="" />
+                        <img loading="lazy" className=" mb-[10px]" src={mobileHomeImage10} alt="" />
+                        <img loading="lazy" className=" mb-[20px]" src={mobileHomeImage11} alt="" />
                     </div>
 
 

@@ -19,7 +19,7 @@ const ImageBorder = ({ src , className }) => {
              absolute right-[-1px] top-[-30px]
             "/>
            
-            <img src={src} alt="" />
+            <img loading="lazy" src={src} alt="" />
         </div>
     );
 }
