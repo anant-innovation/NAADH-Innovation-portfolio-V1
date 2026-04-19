@@ -8,8 +8,9 @@ const StemLab = () => {
 
     return(
         <>
-            <M_StemLAB/>
-            <D_StemLab/>
+        {
+            window.innerWidth >= 1024 ? <D_StemLab/> : <M_StemLAB/>
+        }
         </>
     );
 }

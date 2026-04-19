@@ -7,8 +7,9 @@ const Gallery = () => {
 
     return(
         <>
-            <M_Gallery/>
-            <D_Gallery/>
+        {
+            window.innerWidth >= 1024 ? <D_Gallery/> : <M_Gallery/>
+        }
         </>
     );
 }
