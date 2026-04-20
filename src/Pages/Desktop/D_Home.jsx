@@ -129,7 +129,7 @@ const D_Home = () => {
 
 
                             {/* the bottom center arrow */}
-                            <ChevronDown />
+                            <ChevronDown className="arrow" />
                         </div>
 
                     </div>
