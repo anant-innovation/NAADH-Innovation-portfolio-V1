@@ -53,18 +53,18 @@ const OpeningAnimation = () => {
         tl
 
 
-                .to(darkGreyCurtain.current, {
-                    x: "100%",
-                    duration: 4.58,
-                    ease: "power2"
-                })
+            .to(darkGreyCurtain.current, {
+                x: "100%",
+                duration: 4.58,
+                ease: "power2"
+            })
 
 
-                .to(countDownRef.current, {
-                    y: "180px",
-                    duration: 1,
-                    ease: "power4.out"
-                })
+            .to(countDownRef.current, {
+                y: "180px",
+                duration: 1,
+                ease: "power4.out"
+            })
 
 
 
@@ -83,7 +83,7 @@ const OpeningAnimation = () => {
                 duration: 1,
                 y: "-100px",
                 ease: "power4",
-                
+
 
             })
 
@@ -103,6 +103,49 @@ const OpeningAnimation = () => {
 
 
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const [canScroll, setCanScroll] = useState(false);
+
+  useEffect(() => {
+    // 1. Disable scrolling on mount
+    document.body.style.overflow = 'hidden';
+
+    // 2. Set a timer to re-enable it
+    const timer = setTimeout(() => {
+      setCanScroll(true);
+      document.body.style.overflow = 'unset';
+    }, 8500); // 9.8 seconds
+
+    // 3. Cleanup function to ensure scroll is restored if component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+      clearTimeout(timer);
+    };
+  }, []);
 
 
 
