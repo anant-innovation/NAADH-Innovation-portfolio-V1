@@ -34,7 +34,7 @@ function App() {
     <div className=" relative">
       
       {/* the animation that plays when the website is loaded for the first time */}
-      {/* <OpeningAnimation/> */}
+      <OpeningAnimation/>
 
 
 

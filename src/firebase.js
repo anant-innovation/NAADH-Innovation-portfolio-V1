@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCoGVwqIQg__HdBG_QjrFwoDKNlXkcsG0s",
-  authDomain: "naadh-innovation-websitev1.firebaseapp.com",
-  projectId: "naadh-innovation-websitev1",
-  storageBucket: "naadh-innovation-websitev1.firebasestorage.app",
-  messagingSenderId: "670448611050",
-  appId: "1:670448611050:web:4a028f110e7ce936123193",
-  measurementId: "G-ZVXYKY3E5T"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
