@@ -28,7 +28,7 @@ const MobileTabNavbar = () => {
                 borderLeftWidth:"1px",
                 borderLeftColor:"#616161",
             })
-            console.log("true");
+            // console.log("true");
 
 
             gsap.to(mobileDrawerGhost.current,{
