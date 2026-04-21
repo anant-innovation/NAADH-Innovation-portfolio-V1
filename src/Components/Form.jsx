@@ -60,7 +60,7 @@ const formSchema = z.object({
 
 
 
-const Form = ({className}) => {
+const Form = ({ className }) => {
 
 
     const form = useForm({
@@ -77,36 +77,44 @@ const Form = ({className}) => {
 
 
 
-    const onSubmit = async(data) => {
+    const onSubmit = async (data) => {
 
         // console.log("working");
-        
 
-        try{
 
-            await addDoc(collection(db, "contactus"),{
-                Name:data.Name,
-                Email:data.Email,
-                Phone_Number:data.Phone_Number,
-                Institution_Name:data.Institution_Name,
-                Message:data.Message,
+        try {
+
+            await addDoc(collection(db, "contactus"), {
+                Name: data.Name,
+                Email: data.Email,
+                Phone_Number: data.Phone_Number,
+                Institution_Name: data.Institution_Name,
+                Message: data.Message,
             })
-        }catch(err){
-            console.log(err)
-        }finally{
+        } catch (err) {
+            console.log(err);
+            toast.error("System error unable to post the form", {
+                position: "bottom-left",
+                description: "We are looking into the problem",
+                className: "text-white bg-black",
+                
 
-            toast("We have received your request",{
-            position:"bottom-left",
-            description:"We will reach back to you shortly",
-            className:"text-white bg-black"
-            
-        })
+            })
+
+        } finally {
+
+            toast("We have received your request", {
+                position: "bottom-left",
+                description: "We will reach back to you shortly",
+                className: "text-white bg-black"
+
+            })
         }
 
 
         // console.log(data)
         form.reset()
-        
+
     }
 
 
@@ -347,7 +355,7 @@ const Form = ({className}) => {
                 </Field>
             </CardFooter>
 
-           
+
         </Card>
     );
 }
