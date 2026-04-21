@@ -28,7 +28,8 @@ import {
     InputGroupText,
     InputGroupTextarea,
 } from "@/components/ui/input-group"
-
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "@/firebase";
 
 
 
@@ -39,11 +40,11 @@ const formSchema = z.object({
     "Email": z
         .email(),
 
-    "Phone Number": z
+    "Phone_Number": z
         .string()
         .min(10, "Enter a valid Phone Number"),
 
-    "Institution Name": z
+    "Institution_Name": z
         .string()
         .min(5, "Please Enter the full name of the institue"),
 
@@ -59,7 +60,7 @@ const formSchema = z.object({
 
 
 
-const Form = ({className}) => {
+const Form = ({ className }) => {
 
 
     const form = useForm({
@@ -67,8 +68,8 @@ const Form = ({className}) => {
         defaultValues: {
             "Name": "",
             "Email": "",
-            "Phone Number": "",
-            "Institution Name": "",
+            "Phone_Number": "",
+            "Institution_Name": "",
             "Message": ""
         }
     })
@@ -76,17 +77,44 @@ const Form = ({className}) => {
 
 
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
+
+        // console.log("working");
 
 
-        console.log("working");
-        console.log(data)
-        toast("We have received your request",{
-            position:"bottom-left",
-            description:"We will reach back to you shortly",
-            className:"text-white bg-black"
-            
-        })
+        try {
+
+            await addDoc(collection(db, "contactus"), {
+                Name: data.Name,
+                Email: data.Email,
+                Phone_Number: data.Phone_Number,
+                Institution_Name: data.Institution_Name,
+                Message: data.Message,
+            })
+        } catch (err) {
+            console.log(err);
+            toast.error("System error unable to post the form", {
+                position: "bottom-left",
+                description: "We are looking into the problem",
+                className: "text-white bg-black",
+                
+
+            })
+
+        } finally {
+
+            toast("We have received your request", {
+                position: "bottom-left",
+                description: "We will reach back to you shortly",
+                className: "text-white bg-black"
+
+            })
+        }
+
+
+        // console.log(data)
+        form.reset()
+
     }
 
 
@@ -188,7 +216,7 @@ const Form = ({className}) => {
 
                         {/* Phone Number */}
                         <Controller
-                            name="Phone Number"
+                            name="Phone_Number"
                             control={form.control}
                             render={({ field, fieldState }) => (
 
@@ -226,7 +254,7 @@ const Form = ({className}) => {
 
                         {/* Institution Name */}
                         <Controller
-                            name="Institution Name"
+                            name="Institution_Name"
                             control={form.control}
                             render={({ field, fieldState }) => (
 
@@ -327,7 +355,7 @@ const Form = ({className}) => {
                 </Field>
             </CardFooter>
 
-           
+
         </Card>
     );
 }

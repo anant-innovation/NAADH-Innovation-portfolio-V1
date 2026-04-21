@@ -89,7 +89,7 @@ const D_Home = () => {
 
 
                             {/* the main writing */}
-                            <div className=" flex flex-col justify-center items-center text-white font-black 
+                            <div className=" flex flex-col justify-center items-center text-white font-bold 
                             
                             lg:text-6xl lg:mb-[30px] 
 
@@ -129,7 +129,7 @@ const D_Home = () => {
 
 
                             {/* the bottom center arrow */}
-                            <ChevronDown />
+                            <ChevronDown className="arrow" />
                         </div>
 
                     </div>

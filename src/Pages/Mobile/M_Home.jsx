@@ -87,7 +87,7 @@ const M_Home = () => {
 
 
                     <div className=" w-full absolute bottom-[2rem] left-0 flex justify-center">
-                        <ChevronDown />
+                        <ChevronDown className=" arrow" />
                     </div>
 
                 </div>

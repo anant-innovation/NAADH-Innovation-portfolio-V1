@@ -8,8 +8,9 @@ const Workshop = () => {
 
     return(
         <>
-            <M_Workshop/>
-            <D_Workshop/>
+        {
+            window.innerWidth >= 1024 ? <D_Workshop/> : <M_Workshop/>
+        }
         </>
     );
 }

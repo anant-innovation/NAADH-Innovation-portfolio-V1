@@ -4,12 +4,14 @@ import M_ContactUs from "../Mobile/M_ContactUs";
 
 const ContactUs = () => {
 
-
-
     return(
         <>
-            <M_ContactUs/>
-            <D_ContactUs/>
+
+        {
+            window.innerWidth >= 1024 ? <D_ContactUs/> : <M_ContactUs/>
+        }
+            
+            
         </>
     );
 }

@@ -28,7 +28,7 @@ const MobileTabNavbar = () => {
                 borderLeftWidth:"1px",
                 borderLeftColor:"#616161",
             })
-            console.log("true");
+            // console.log("true");
 
 
             gsap.to(mobileDrawerGhost.current,{
@@ -96,7 +96,7 @@ const MobileTabNavbar = () => {
 
     return (
         <div className=" w-[100%] h-[4rem] bg-background flex items-center justify-between p-[10px] border-b border-white10 
-         sticky top-0 z-50
+         sticky top-0 z-40
          
          xs2:px-[20px]
          sm:px-[30px]

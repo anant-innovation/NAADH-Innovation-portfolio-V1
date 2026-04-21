@@ -237,9 +237,12 @@ const D_Gallery = () => {
                         </div>
 
 
-                        <div className=" w-screen flex justify-center">
+                        <div className=" lg:w-[98vw]
+                        3xl:w-[130%]
+                        flex justify-center">
                             <Divider mb={"200px"} />
                         </div>
+
 
 
 

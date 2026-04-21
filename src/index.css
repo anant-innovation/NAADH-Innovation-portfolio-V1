@@ -18,6 +18,9 @@
 
       background-size: 40px 40px;
       background-attachment: fixed;
+
+      filter: blur(0.4px);
+      
 }
 
 .grid-bg-desktop {
@@ -330,4 +333,46 @@ body {
       .naadhArchives{
             font-size: 48px;
       }
+}
+
+
+
+.landingAnimationNAADH{
+
+      fill: transparent;
+      stroke: white;
+      stroke-width: 0.4px;
+      stroke-dasharray: 90;
+      stroke-dashoffset: 90;
+      animation: textAnimation 3s ease-in-out;
+      animation-fill-mode: forwards;
+}
+
+
+@keyframes textAnimation{
+
+      0%{
+            stroke-dashoffset: 90;
+      }
+
+      60%{
+            fill: transparent;
+      }
+      100%{
+            fill: white;
+            stroke-dashoffset: 0;
+      }
+}
+
+
+
+@keyframes bob {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(8px); }
+  60%  { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+.arrow {
+  animation: bob 1.4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }

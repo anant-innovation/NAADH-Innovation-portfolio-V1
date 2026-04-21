@@ -12,7 +12,7 @@ const DesktopNavbar = () => {
 
     return (
         <div className="switchDesktopNavbar w-full bg-background-level2 sticky top-0
-        flex justify-center z-50">
+        flex justify-center z-40">
 
 
 

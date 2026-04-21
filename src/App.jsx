@@ -9,6 +9,7 @@ import MobileTabNavbar from "./Components/MobileTabNavbar";
 import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import DesktopNavbar from "./Components/DesktopNavbar";
+import OpeningAnimation from "./Components/OpeningAnimation";
 
 
 function App() {
@@ -30,9 +31,17 @@ function App() {
 
 
   return (
-    <div>
+    <div className=" relative">
+      
+      {/* the animation that plays when the website is loaded for the first time */}
+      <OpeningAnimation/>
+
+
+
+
       <MobileTabNavbar />
       <DesktopNavbar />
+
 
       <AnimatePresence mode="wait">
         

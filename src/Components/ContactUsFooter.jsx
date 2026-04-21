@@ -18,7 +18,7 @@ const ContactUsFooter = ({ button }) => {
             <div className=' flex flex-col justify-start mb-[30px]'>
 
                 {/* Naadh Innovation Heading */}
-                <h1 className=' text-3xl font-extrabold text-white leading-[30px]'>NAADH Innovation</h1>
+                <h1 className=' text-3xl font-bold text-white leading-[30px]'>NAADH Innovation</h1>
 
 
                 {/* National Aerospace Agriculture Defence & Hospitality */}
@@ -77,14 +77,14 @@ const ContactUsFooter = ({ button }) => {
                                 <div className=' flex justify-between'>
 
                                     {/* linkedin */}
-                                    <a  href="">
+                                    <a target='_blank'  href="https://www.linkedin.com/in/naadh-innovation/">
                                         <FaLinkedin className='w-[30px] h-[30px]' />
                                     </a>
 
                                     {/* twitter */}
-                                    <a className='ml-[10px]' href="">
+                                    {/* <a className='ml-[10px]' href="">
                                         <BsTwitterX className='w-[30px] h-[30px]' />
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         ) : null
