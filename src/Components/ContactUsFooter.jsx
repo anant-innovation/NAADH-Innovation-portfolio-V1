@@ -105,7 +105,11 @@ const ContactUsFooter = ({ button }) => {
 
                     {/* privacy policy */}
                     <div className=' flex w-full justify-end'>
-                        <a href="" className=' text-white mr-[30px]'>Privacy Policy</a>
+                        <a 
+                        href="/PDF/privacy_policy_NAADH_Innovation.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=' text-white mr-[30px]'>Privacy Policy</a>
                         <br />
                         {/* careers */}
                         <a href="" className=' text-white'>Careers</a>

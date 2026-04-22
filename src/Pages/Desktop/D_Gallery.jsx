@@ -17,8 +17,10 @@ import DesktopGalleryImage15 from "@/assets/Desktop/Gallery/DesktopGallery15.jpg
 import DesktopGalleryImage16 from "@/assets/Desktop/Gallery/DesktopGallery16.jpg"
 import DesktopGalleryImage17 from "@/assets/Desktop/Gallery/DesktopGallery17.jpg"
 import DesktopGalleryImage18 from "@/assets/Desktop/Gallery/DesktopGallery18.jpg"
-import founderImage from "@/assets/Desktop/Gallery/founderPicture.jpg"
-import co_founderImage from "@/assets/Desktop/Gallery/CofounderPicture.jpg"
+import DesktopGalleryImage19 from "@/assets/Desktop/Gallery/DesktopGallery19.jpg"
+import DesktopGalleryImage20 from "@/assets/Desktop/Gallery/DesktopGallery20.jpg"
+import co_founderImage from "@/assets/Desktop/Gallery/founderPicture.jpg"
+import founderImage from "@/assets/Desktop/Gallery/CofounderPicture.jpg"
 
 
 
@@ -211,6 +213,16 @@ const D_Gallery = () => {
                                     <Image src={DesktopGalleryImage17} alt="" />
                                 </div>
 
+
+
+                                <div className=" col-span-10">
+                                    <Image src={DesktopGalleryImage19} alt="" />
+                                </div>
+
+                                <div className=" col-span-10">
+                                    <Image src={DesktopGalleryImage20} alt="" />
+                                </div>
+
                             </div>
                         </MultipleImageContainer>
 
@@ -276,10 +288,10 @@ const D_Gallery = () => {
 
                                 {/* founder  */}
                                 <div >
-                                    <ImageBorder className={" w-[360px] mb-[40px]"} src={founderImage} />
+                                    <ImageBorder className={" w-[360px] mb-[40px]"} src={co_founderImage} />
 
                                     <div className=" w-full flex justify-end">
-                                        <BulletPoint sm={true} text={"FOUNDER"} />
+                                        <BulletPoint sm={true} text={"CO FOUNDER"} />
                                     </div>
 
 
@@ -298,10 +310,10 @@ const D_Gallery = () => {
 
                                 {/* cofounder */}
                                 <div>
-                                    <ImageBorder className={" w-[360px] mb-[40px]"} src={co_founderImage} />
+                                    <ImageBorder className={" w-[360px] mb-[40px]"} src={founderImage} />
 
                                     <div className=" w-full flex justify-end">
-                                        <BulletPoint sm={true} text={"CO FOUNDER"} />
+                                        <BulletPoint sm={true} text={"FOUNDER"} />
                                     </div>
 
 
