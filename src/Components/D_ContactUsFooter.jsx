@@ -84,8 +84,12 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
                     {/* container 4 */}
                     <div className="
                     ">
-                        <h1 className=" text-white text-xl mb-[5px]
-                        ">Privacy Policy</h1>
+                        <a
+                        href="../../public/PDF/privacy_policy_NAADH_Innovation.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=" text-white text-xl mb-[5px]
+                        ">Privacy Policy</a>
                     </div>
 
 
