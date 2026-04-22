@@ -88,7 +88,7 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
                         href="../../public/PDF/privacy_policy_NAADH_Innovation.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className=" text-white text-xl mb-[5px]
+                        className=" custom-cursor text-white text-xl mb-[5px]
                         ">Privacy Policy</a>
                     </div>
 

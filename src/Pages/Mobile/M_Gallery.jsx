@@ -16,8 +16,10 @@ import mobileGalleryImage15 from "@/assets/Mobile/Gallery/MobileGallery15.jpg"
 import mobileGalleryImage16 from "@/assets/Mobile/Gallery/MobileGallery16.jpg"
 import mobileGalleryImage17 from "@/assets/Mobile/Gallery/MobileGallery17.jpg"
 import mobileGalleryImage18 from "@/assets/Mobile/Gallery/MobileGallery18.jpg"
-import mobileFounder from "@/assets/Mobile/Gallery/founderPicture.jpg"
-import mobileCoFounder from "@/assets/Mobile/Gallery/CofounderPicture.jpg"
+import mobileGalleryImage19 from "@/assets/Mobile/Gallery/MobileGallery19.jpg"
+import mobileGalleryImage20 from "@/assets/Mobile/Gallery/MobileGallery20.jpg"
+import mobileCoFounder from "@/assets/Mobile/Gallery/founderPicture.jpg"
+import mobileFounder from "@/assets/Mobile/Gallery/CofounderPicture.jpg"
 
 
 
@@ -98,7 +100,9 @@ const M_Gallery = () => {
                     <img className=" mb-[10px]" src={mobileGalleryImage15} alt="" />
                     <img className=" mb-[10px]" src={mobileGalleryImage16} alt="" />
                     <img className=" mb-[10px]" src={mobileGalleryImage17} alt="" />
-                    <img className=" mb-[40px]" src={mobileGalleryImage18} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage18} alt="" />
+                    <img className=" mb-[10px]" src={mobileGalleryImage19} alt="" />
+                    <img className=" mb-[40px]" src={mobileGalleryImage20} alt="" />
 
 
 
@@ -129,12 +133,12 @@ const M_Gallery = () => {
 
 
                     {/* founder image */}
-                    <img className=" mb-[10px] sm:mb-[20px]" src={mobileFounder} alt="" />
+                    <img className=" mb-[10px] sm:mb-[20px]" src={mobileCoFounder} alt="" />
 
 
                     {/* founder bullet */}
                     <div className="w-full flex justify-end ">
-                        <BulletPoint text={"FOUNDER"} />
+                        <BulletPoint text={"CO FOUNDER"} />
                     </div>
 
 
@@ -146,13 +150,13 @@ const M_Gallery = () => {
 
 
                     {/* Cofounder Image */}
-                    <img className=" mb-[10px] sm:mb-[20px]" src={mobileCoFounder} alt="" />
+                    <img className=" mb-[10px] sm:mb-[20px]" src={mobileFounder} alt="" />
 
 
 
                     {/* co founder bullet */}
                     <div className="flex justify-end w-full">
-                        <BulletPoint text={"CO FOUNDER"} />
+                        <BulletPoint text={"FOUNDER"} />
                     </div>
 
 
