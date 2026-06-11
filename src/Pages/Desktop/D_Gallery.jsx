@@ -291,7 +291,7 @@ const D_Gallery = () => {
                                     <ImageBorder className={" w-[360px] mb-[40px]"} src={co_founderImage} />
 
                                     <div className=" w-full flex justify-end">
-                                        <BulletPoint sm={true} text={"CO FOUNDER"} />
+                                        <BulletPoint sm={true} text={"FOUNDER"} />
                                     </div>
 
 
@@ -308,20 +308,7 @@ const D_Gallery = () => {
 
 
 
-                                {/* cofounder */}
-                                <div>
-                                    <ImageBorder className={" w-[360px] mb-[40px]"} src={founderImage} />
-
-                                    <div className=" w-full flex justify-end">
-                                        <BulletPoint sm={true} text={"FOUNDER"} />
-                                    </div>
-
-
-
-                                    <Text>Sudhanshu Gupta</Text>
-                                    <Text>Cheif Executive Officer (CEO),<br />
-                                        Director</Text>
-                                </div>
+                                
                             </div>
                         </div>
 

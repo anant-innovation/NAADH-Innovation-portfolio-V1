@@ -5,6 +5,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 
 .grid-bg {
@@ -27,10 +32,10 @@
       background-image:
 
             /* up down */
-            linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(to right, rgba(255, 255, 255, 0.012) 1px, transparent 1px),
 
             /* left right */
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
 
       background-size: 40px 40px;
       background-attachment: fixed;
