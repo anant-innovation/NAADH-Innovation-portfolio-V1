@@ -33,7 +33,7 @@ const D_ContactUsFooter = ({ contactUsButton = true }) => {
 
                         {/* secondary page heading style */}
                         <div className=" mb-[30px]">
-                            <h1 className=" text-4xl font-bold text-white leading-[40px]">NAADH Innovation</h1>
+                            <h1 className=" text-4xl font-medium text-white leading-[40px]">NAADH Innovation</h1>
                             <p className="">National Aerospace Agriculture Defence & Hospitality</p>
                         </div>
 
